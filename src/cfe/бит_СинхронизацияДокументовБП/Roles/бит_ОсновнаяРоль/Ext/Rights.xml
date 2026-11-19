@@ -4,14 +4,14 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>InformationRegister.МР_НастройкиОтбораДокументов</name>
+		<name>InformationRegister.бит_НастройкиОтбораДокументов</name>
 		<right><name>Read</name><value>true</value></right>
 		<right><name>Update</name><value>true</value></right>
 		<right><name>View</name><value>true</value></right>
 		<right><name>Edit</name><value>true</value></right>
 	</object>
 	<object>
-		<name>InformationRegister.МР_ДокументыСПроводками4101</name>
+		<name>InformationRegister.бит_ДокументыСПроводками4101</name>
 		<right><name>Read</name><value>true</value></right>
 		<right><name>Update</name><value>true</value></right>
 		<right><name>View</name><value>true</value></right>

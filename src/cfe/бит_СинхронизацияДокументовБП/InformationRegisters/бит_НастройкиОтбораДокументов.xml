@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<InformationRegister uuid="aebe1fd3-dfde-4c56-8be0-9ff807971b40">
+	<InformationRegister uuid="e427d80d-d35d-455a-b552-8a89d1f909b4">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.МР_ДокументыСПроводками4101" category="Record">
-				<xr:TypeId>fc988c87-b54c-483a-b257-75b10057895e</xr:TypeId>
-				<xr:ValueId>56b40e05-c5c4-4462-a605-aa4e6f056d41</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.бит_НастройкиОтбораДокументов" category="Record">
+				<xr:TypeId>818429f7-d7f9-41a9-ac81-1a5f0bfddd48</xr:TypeId>
+				<xr:ValueId>3a35c1fc-1294-4606-9671-1d2eee7115cf</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.МР_ДокументыСПроводками4101" category="Manager">
-				<xr:TypeId>c96a487d-e3a9-433d-a5fe-4aa5485ddda0</xr:TypeId>
-				<xr:ValueId>f80ecad0-df7c-4a6c-8829-4629b824bdd8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.бит_НастройкиОтбораДокументов" category="Manager">
+				<xr:TypeId>dfdc1651-b8e7-4428-86eb-c94f30c71a89</xr:TypeId>
+				<xr:ValueId>59f0b6ae-6ace-44b6-b9c7-661cb658ece8</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.МР_ДокументыСПроводками4101" category="Selection">
-				<xr:TypeId>a656205a-a545-41ca-b3d0-6eafac306dc0</xr:TypeId>
-				<xr:ValueId>40f5f0f8-3e50-4257-937b-c1b05e6abeb8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.бит_НастройкиОтбораДокументов" category="Selection">
+				<xr:TypeId>fe0bc9a6-d9d0-4b3d-843f-dd072722b00f</xr:TypeId>
+				<xr:ValueId>739ddd1e-30fc-471a-9306-0fe200cdc3b3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.МР_ДокументыСПроводками4101" category="List">
-				<xr:TypeId>0c70096b-4fd3-498b-9f45-e79a08e7ec69</xr:TypeId>
-				<xr:ValueId>2eb8976a-a71d-4f45-a0a9-0674856cd2f3</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.бит_НастройкиОтбораДокументов" category="List">
+				<xr:TypeId>79598ebc-c1af-4adf-8a4f-f6d97a6f2998</xr:TypeId>
+				<xr:ValueId>b5e40bb9-b7b7-49ce-beac-f3cdffda8f9b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.МР_ДокументыСПроводками4101" category="RecordSet">
-				<xr:TypeId>84498fb4-82e9-40f7-93c8-5984824910aa</xr:TypeId>
-				<xr:ValueId>283e7fe5-e117-4b53-8b83-202b392e2073</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.бит_НастройкиОтбораДокументов" category="RecordSet">
+				<xr:TypeId>b123f0d8-42bf-4212-b183-030f8f4d23ce</xr:TypeId>
+				<xr:ValueId>625eb266-89e7-42f8-8f76-f5131e8aa03e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.МР_ДокументыСПроводками4101" category="RecordKey">
-				<xr:TypeId>d71b1fc0-77d8-4715-a6eb-592a82b187ae</xr:TypeId>
-				<xr:ValueId>d5d0baee-878e-4760-8533-a7a552a9712c</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.бит_НастройкиОтбораДокументов" category="RecordKey">
+				<xr:TypeId>596d4cf1-0877-499e-b22f-559bcbda6b92</xr:TypeId>
+				<xr:ValueId>509c8fd3-b5e5-4687-b296-b5d362155e17</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.МР_ДокументыСПроводками4101" category="RecordManager">
-				<xr:TypeId>e2058070-7605-4456-888a-9de210cbf831</xr:TypeId>
-				<xr:ValueId>a561fb38-04b7-4e1b-914d-6d59047bda46</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.бит_НастройкиОтбораДокументов" category="RecordManager">
+				<xr:TypeId>43b51c7c-8414-4b72-a3d3-96fab8959418</xr:TypeId>
+				<xr:ValueId>4ffd524c-3b56-412f-a830-3a30687cdbe4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>МР_ДокументыСПроводками4101</Name>
+			<Name>бит_НастройкиОтбораДокументов</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Документы с проводками 41.01 (МР)</v8:content>
+					<v8:content>Настройки отбора документов (бит)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -64,7 +64,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-		<Dimension uuid="06fa7ae3-0f26-471a-b8ae-680841dc1a28">
+		<Dimension uuid="cea914be-8c1e-455b-ac28-b8fc4fe4b17f">
 			<Properties>
 				<Name>УзелИнформационнойБазы</Name>
 				<Synonym>
@@ -104,18 +104,18 @@
 				<UseInTotals>true</UseInTotals>
 			</Properties>
 		</Dimension>
-		<Dimension uuid="8404fc0b-e48e-4a6e-a9fc-0439e6056d85">
+		<Resource uuid="ceab1dcf-1b21-4538-888a-e7b05250d0aa">
 			<Properties>
-				<Name>Документ</Name>
+				<Name>ОтбиратьПоПрефиксу</Name>
 				<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Документ</v8:content>
+					<v8:content>Отбирать по префиксу</v8:content>
 				</v8:item>
 			</Synonym>
 				<Comment/>
 				<Type>
-					<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					<v8:Type>xs:boolean</v8:Type>
 				</Type>
 				<PasswordMode>false</PasswordMode>
 				<Format/>
@@ -127,7 +127,7 @@
 				<ExtendedEdit>false</ExtendedEdit>
 				<MinValue xsi:nil="true"/>
 				<MaxValue xsi:nil="true"/>
-				<FillChecking>ShowError</FillChecking>
+				<FillChecking>DontCheck</FillChecking>
 				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 				<ChoiceParameterLinks/>
 				<ChoiceParameters/>
@@ -136,15 +136,48 @@
 				<ChoiceForm/>
 				<LinkByType/>
 				<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				<Master>false</Master>
-				<MainFilter>true</MainFilter>
-				<DenyIncompleteValues>true</DenyIncompleteValues>
-				<Indexing>Index</Indexing>
+				<Indexing>DontIndex</Indexing>
 				<FullTextSearch>DontUse</FullTextSearch>
-				<UseInTotals>true</UseInTotals>
+				<FillValue xsi:type="xs:boolean">false</FillValue>
 			</Properties>
-		</Dimension>
-
+		</Resource>
+		<Resource uuid="d25c3e62-1ccb-4537-983c-08907328badb">
+			<Properties>
+				<Name>АвтоотправкаНастроена</Name>
+				<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоотправка настроена</v8:content>
+				</v8:item>
+			</Synonym>
+				<Comment/>
+				<Type>
+					<v8:Type>xs:boolean</v8:Type>
+				</Type>
+				<PasswordMode>false</PasswordMode>
+				<Format/>
+				<EditFormat/>
+				<ToolTip/>
+				<MarkNegatives>false</MarkNegatives>
+				<Mask/>
+				<MultiLine>false</MultiLine>
+				<ExtendedEdit>false</ExtendedEdit>
+				<MinValue xsi:nil="true"/>
+				<MaxValue xsi:nil="true"/>
+				<FillChecking>DontCheck</FillChecking>
+				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+				<ChoiceParameterLinks/>
+				<ChoiceParameters/>
+				<QuickChoice>Auto</QuickChoice>
+				<CreateOnInput>Auto</CreateOnInput>
+				<ChoiceForm/>
+				<LinkByType/>
+				<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				<Indexing>DontIndex</Indexing>
+				<FullTextSearch>DontUse</FullTextSearch>
+				<FillValue xsi:type="xs:boolean">false</FillValue>
+			</Properties>
+		</Resource>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

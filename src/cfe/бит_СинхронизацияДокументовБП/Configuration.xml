@@ -33,17 +33,17 @@
 		</InternalInfo>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<Name>МР_СинхронизацияДокументовБП</Name>
+			<Name>бит_СинхронизацияДокументовБП</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Синхронизация документов БП (МР)</v8:content>
+					<v8:content>Синхронизация документов БП (бит)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<ConfigurationExtensionPurpose>Customization</ConfigurationExtensionPurpose>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>false</KeepMappingToExtendedConfigurationObjectsByIDs>
-			<NamePrefix>МР_</NamePrefix>
+			<NamePrefix>бит_</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
@@ -51,9 +51,9 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.МР_ОсновнаяРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
-			<Vendor>МР</Vendor>
+			<Vendor>бит</Vendor>
 			<Version>1.0.0.1</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
@@ -64,15 +64,15 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Role>МР_ОсновнаяРоль</Role>
-			<CommonModule>МР_РегистрацияДокументовБП</CommonModule>
+			<Role>бит_ОсновнаяРоль</Role>
+			<CommonModule>бит_РегистрацияДокументовБП</CommonModule>
 			<CommonModule>ОбменДаннымиСобытия</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
-			<EventSubscription>МР_РегистрацияДокументаПередЗаписью</EventSubscription>
-			<EventSubscription>МР_РегистрацияДокументаПриЗаписи</EventSubscription>
-			<EventSubscription>МР_РегистрацияДокументаПередУдалением</EventSubscription>
-			<InformationRegister>МР_НастройкиОтбораДокументов</InformationRegister>
-			<InformationRegister>МР_ДокументыСПроводками4101</InformationRegister>
+			<EventSubscription>бит_РегистрацияДокументаПередЗаписью</EventSubscription>
+			<EventSubscription>бит_РегистрацияДокументаПриЗаписи</EventSubscription>
+			<EventSubscription>бит_РегистрацияДокументаПередУдалением</EventSubscription>
+			<InformationRegister>бит_НастройкиОтбораДокументов</InformationRegister>
+			<InformationRegister>бит_ДокументыСПроводками4101</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
