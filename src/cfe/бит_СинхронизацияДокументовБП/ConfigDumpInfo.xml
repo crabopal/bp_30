@@ -5,12 +5,10 @@
 		<Metadata name="Language.Русский" id="4c0eafe2-c20e-4a34-8c8c-a594fba68c87" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="Role.бит_ОсновнаяРоль" id="c372e8ba-75ef-477f-8dff-e1398c19b3fd" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="CommonModule.бит_РегистрацияДокументовБП" id="839476d5-2a26-4450-8b9f-8a4628ca243f" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="CommonModule.бит_РегистрацияДокументовБПВызовСервера" id="41be3b13-d4f6-466a-9cc4-fbeb790974c5" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="CommonModule.бит_РегистрацияДокументовБПКлиент" id="9421d2eb-494f-4495-894c-67d1a835d811" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="CommonModule.ОбменДаннымиСобытия" id="a0436bbe-0d80-4a04-aff9-f7a193d77f33" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="CommonModule.ОбменДаннымиСервер" id="10dc517d-f02c-420b-9644-070177dec709" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="CommonModule.ОбменДаннымиКлиент" id="3bd57626-9e7a-44d6-814b-19517b47b6ce" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый" id="c6ada2d6-cbed-4e81-aaa5-f678e9d0e649" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="fe64a530-57cd-4eeb-b02e-b46218273c28" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="InformationRegister.бит_НастройкиОтбораДокументов" id="e427d80d-d35d-455a-b552-8a89d1f909b4" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="InformationRegister.бит_ДокументыСПроводками4101" id="aebe1fd3-dfde-4c56-8be0-9ff807971b40" configVersion="0000000000000000000000000000000000000000"/>
 	</ConfigVersions>

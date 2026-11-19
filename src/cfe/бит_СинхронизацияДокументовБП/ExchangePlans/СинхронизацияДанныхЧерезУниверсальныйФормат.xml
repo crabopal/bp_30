@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<ExchangePlan uuid="fe64a530-57cd-4eeb-b02e-b46218273c28">
+		<InternalInfo>
+			<xr:ThisNode>f30f53df-83e0-4a1c-98e6-9b63ce51b556</xr:ThisNode>
+			<xr:GeneratedType name="ExchangePlanObject.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Object">
+				<xr:TypeId>af1a1174-950d-4592-8248-3d2091bd7a5d</xr:TypeId>
+				<xr:ValueId>d6be1c58-922e-45f9-84b3-eec4270fc6cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanRef.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Ref">
+				<xr:TypeId>119e06dc-b8a3-4190-9c82-4552eb308ac4</xr:TypeId>
+				<xr:ValueId>bd36acc9-0e8e-4136-b2a3-1d7c17f23494</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanSelection.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Selection">
+				<xr:TypeId>e45a23a7-b3f3-4042-9b75-d953ce5b4656</xr:TypeId>
+				<xr:ValueId>2902716b-b5ac-4541-8e7c-4005b2cec1c5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanList.СинхронизацияДанныхЧерезУниверсальныйФормат" category="List">
+				<xr:TypeId>d9e71f89-23a5-425d-8b79-0ea3098277d4</xr:TypeId>
+				<xr:ValueId>fccaeb7b-bea7-47a4-9e36-a48263194fb1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanManager.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Manager">
+				<xr:TypeId>08c07893-0c22-4ed5-89a7-eb8a49e872be</xr:TypeId>
+				<xr:ValueId>95199e0d-ea1a-4af2-8d75-15f3c48d8fee</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СинхронизацияДанныхЧерезУниверсальныйФормат</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5e7efda3-e1e0-4ecb-9431-be4f053e4d65</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="40e2a109-9314-4660-8cdf-10840dd904a4">
+				<Properties>
+					<Name>бит_ОтбиратьДокументыПоПрефиксу</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбирать документы по префиксу информационной базы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:type="xs:boolean">true</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</ExchangePlan>
+</MetaDataObject>

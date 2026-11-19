@@ -107,13 +107,13 @@
 				<FullTextSearch>DontUse</FullTextSearch>
 			</Properties>
 		</Dimension>
-		<Resource uuid="ceab1dcf-1b21-4538-888a-e7b05250d0aa">
+		<Resource uuid="45c7c832-09ab-4745-9084-a30be9e4a23b">
 			<Properties>
-				<Name>ОтбиратьПоПрефиксу</Name>
+				<Name>ПризнакОтбораИнициализирован</Name>
 				<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отбирать по префиксу</v8:content>
+					<v8:content>Признак отбора инициализирован</v8:content>
 				</v8:item>
 			</Synonym>
 				<Comment/>

@@ -2,11 +2,16 @@
 <Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.17">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
 		<name>InformationRegister.бит_НастройкиОтбораДокументов</name>
 		<right><name>Read</name><value>true</value></right>
 		<right><name>Update</name><value>true</value></right>
+		<right><name>View</name><value>true</value></right>
+		<right><name>Edit</name><value>true</value></right>
+	</object>
+	<object>
+		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.бит_ОтбиратьДокументыПоПрефиксу</name>
 		<right><name>View</name><value>true</value></right>
 		<right><name>Edit</name><value>true</value></right>
 	</object>

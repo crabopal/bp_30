@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>бит</Vendor>
-			<Version>1.0.0.4</Version>
+			<Version>1.0.0.5</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -66,12 +66,10 @@
 			<Language>Русский</Language>
 			<Role>бит_ОсновнаяРоль</Role>
 			<CommonModule>бит_РегистрацияДокументовБП</CommonModule>
-			<CommonModule>бит_РегистрацияДокументовБПВызовСервера</CommonModule>
-			<CommonModule>бит_РегистрацияДокументовБПКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиСобытия</CommonModule>
 			<CommonModule>ОбменДаннымиСервер</CommonModule>
-			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
+			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<InformationRegister>бит_НастройкиОтбораДокументов</InformationRegister>
 			<InformationRegister>бит_ДокументыСПроводками4101</InformationRegister>
 		</ChildObjects>
