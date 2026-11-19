@@ -4,21 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
-		<name>InformationRegister.бит_НастройкиОтбораДокументов</name>
-		<right><name>Read</name><value>true</value></right>
-		<right><name>Update</name><value>true</value></right>
-		<right><name>View</name><value>true</value></right>
-		<right><name>Edit</name><value>true</value></right>
-	</object>
-	<object>
 		<name>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.бит_ОтбиратьДокументыПоПрефиксу</name>
-		<right><name>View</name><value>true</value></right>
-		<right><name>Edit</name><value>true</value></right>
-	</object>
-	<object>
-		<name>InformationRegister.бит_ДокументыСПроводками4101</name>
-		<right><name>Read</name><value>true</value></right>
-		<right><name>Update</name><value>true</value></right>
 		<right><name>View</name><value>true</value></right>
 		<right><name>Edit</name><value>true</value></right>
 	</object>

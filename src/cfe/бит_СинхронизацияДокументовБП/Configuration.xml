@@ -69,9 +69,8 @@
 			<CommonModule>ОбменДаннымиСобытия</CommonModule>
 			<CommonModule>ОбменДаннымиСервер</CommonModule>
 			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
+			<EventSubscription>бит_РегистрацияДвиженийХозрасчетный</EventSubscription>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
-			<InformationRegister>бит_НастройкиОтбораДокументов</InformationRegister>
-			<InformationRegister>бит_ДокументыСПроводками4101</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
