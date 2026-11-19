@@ -101,7 +101,6 @@
 				<DenyIncompleteValues>true</DenyIncompleteValues>
 				<Indexing>Index</Indexing>
 				<FullTextSearch>DontUse</FullTextSearch>
-				<UseInTotals>true</UseInTotals>
 			</Properties>
 		</Dimension>
 		<Resource uuid="ceab1dcf-1b21-4538-888a-e7b05250d0aa">

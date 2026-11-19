@@ -101,7 +101,6 @@
 				<DenyIncompleteValues>true</DenyIncompleteValues>
 				<Indexing>Index</Indexing>
 				<FullTextSearch>DontUse</FullTextSearch>
-				<UseInTotals>true</UseInTotals>
 			</Properties>
 		</Dimension>
 		<Dimension uuid="8404fc0b-e48e-4a6e-a9fc-0439e6056d85">
@@ -141,7 +140,6 @@
 				<DenyIncompleteValues>true</DenyIncompleteValues>
 				<Indexing>Index</Indexing>
 				<FullTextSearch>DontUse</FullTextSearch>
-				<UseInTotals>true</UseInTotals>
 			</Properties>
 		</Dimension>
 
