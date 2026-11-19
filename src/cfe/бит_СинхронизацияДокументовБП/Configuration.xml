@@ -68,9 +68,6 @@
 			<CommonModule>бит_РегистрацияДокументовБП</CommonModule>
 			<CommonModule>ОбменДаннымиСобытия</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
-			<EventSubscription>бит_РегистрацияДокументаПередЗаписью</EventSubscription>
-			<EventSubscription>бит_РегистрацияДокументаПриЗаписи</EventSubscription>
-			<EventSubscription>бит_РегистрацияДокументаПередУдалением</EventSubscription>
 			<InformationRegister>бит_НастройкиОтбораДокументов</InformationRegister>
 			<InformationRegister>бит_ДокументыСПроводками4101</InformationRegister>
 		</ChildObjects>

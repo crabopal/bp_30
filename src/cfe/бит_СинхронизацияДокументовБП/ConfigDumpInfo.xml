@@ -8,9 +8,6 @@
 		<Metadata name="CommonModule.ОбменДаннымиСобытия" id="a0436bbe-0d80-4a04-aff9-f7a193d77f33" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="03ae4591-2e98-4d5c-bb72-ff3a5b818847" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Form.ФормаУзла" id="3b5ea88f-13ff-4b8b-864e-791f8b590c2a" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="EventSubscription.бит_РегистрацияДокументаПередЗаписью" id="6a1c0e4d-2b7a-4f5e-9c11-8d4e2a7b6c30" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="EventSubscription.бит_РегистрацияДокументаПриЗаписи" id="1030826f-df84-4f0c-a3d3-4b0ea2bf94da" configVersion="0000000000000000000000000000000000000000"/>
-		<Metadata name="EventSubscription.бит_РегистрацияДокументаПередУдалением" id="dc6dc184-faa3-47d0-a92c-f32840432f01" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="InformationRegister.бит_НастройкиОтбораДокументов" id="e427d80d-d35d-455a-b552-8a89d1f909b4" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="InformationRegister.бит_ДокументыСПроводками4101" id="aebe1fd3-dfde-4c56-8be0-9ff807971b40" configVersion="0000000000000000000000000000000000000000"/>
 	</ConfigVersions>
