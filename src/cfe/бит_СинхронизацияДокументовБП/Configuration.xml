@@ -71,6 +71,7 @@
 			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<EventSubscription>бит_РегистрацияДвиженийХозрасчетный</EventSubscription>
+			<AccountingRegister>Хозрасчетный</AccountingRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

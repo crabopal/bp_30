@@ -11,9 +11,9 @@
 			</Synonym>
 			<Comment/>
 			<Source>
-				<v8:TypeSet>cfg:AccountingRegisterRecordSet</v8:TypeSet>
+				<v8:Type>cfg:AccountingRegisterRecordSet.Хозрасчетный</v8:Type>
 			</Source>
-			<Event>ПередЗаписью</Event>
+			<Event>BeforeWrite</Event>
 			<Handler>CommonModule.бит_РегистрацияДокументовБП.ПередЗаписьюДвиженийХозрасчетный</Handler>
 		</Properties>
 	</EventSubscription>
