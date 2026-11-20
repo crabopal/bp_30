@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
 	<ConfigVersions>
-		<Metadata name="AccountingRegister.Хозрасчетный" id="f87bf415-402f-400d-8c20-f21df45dcf7c" configVersion="da663d2e26361607b66024246e1518d3f116eb5d"/>
+		<Metadata name="CommonModule.ОбменДаннымиXDTOСервер" id="e0de3134-0d2f-4524-a777-fa5bcea5af29" configVersion="bfe82e5b14a21effb54cdebfb4609724a4fc0a72"/>
+		<Metadata name="CommonModule.ОбменДаннымиXDTOСервер.Module" id="e0de3134-0d2f-4524-a777-fa5bcea5af29.0" configVersion="89fe4d83be147c0539c9cc36bbc2352a3cc2bd48"/>
 		<Metadata name="CommonModule.ОбменДаннымиСервер" id="10dc517d-f02c-420b-9644-070177dec709" configVersion="d476e1a043665b12381bbf54b3099624360106dd"/>
 		<Metadata name="CommonModule.ОбменДаннымиСервер.Module" id="10dc517d-f02c-420b-9644-070177dec709.0" configVersion="6ff730ca4e266fd22f3dd2690ab90ad5cab6ca81"/>
 		<Metadata name="CommonModule.ОбменДаннымиСобытия" id="a0436bbe-0d80-4a04-aff9-f7a193d77f33" configVersion="64324d8653f256d294a70f0cd0df8baf94f069be"/>
@@ -11,7 +12,6 @@
 		<Metadata name="CommonModule.бит_РегистрацияДокументовБП" id="839476d5-2a26-4450-8b9f-8a4628ca243f" configVersion="c5a0480bfca3b9f6c3301e92a39773eb2a1aa790"/>
 		<Metadata name="CommonModule.бит_РегистрацияДокументовБП.Module" id="839476d5-2a26-4450-8b9f-8a4628ca243f.0" configVersion="009af59ed5d5700a6c904a9b655b70916e40086a"/>
 		<Metadata name="Configuration.бит_СинхронизацияДокументовБП" id="4c0eafe2-c20e-4a34-8c8c-a594fba68c87" configVersion="258d2ffa2c602aebae2d58c04b10346c8f6fb272"/>
-		<Metadata name="EventSubscription.бит_РегистрацияДвиженийХозрасчетный" id="7c1e4a2b-6d58-4f13-9a70-2b8e5c91d4aa" configVersion="46b051ed3e803830708bd73c8ede4ffd1fcf93a6"/>
 		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="fe64a530-57cd-4eeb-b02e-b46218273c28" configVersion="46c9d0c754c31722059c45374f5b747f179bfebd">
 			<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.бит_ОтбиратьДокументыПоПрефиксу" id="40e2a109-9314-4660-8cdf-10840dd904a4"/>
 		</Metadata>
