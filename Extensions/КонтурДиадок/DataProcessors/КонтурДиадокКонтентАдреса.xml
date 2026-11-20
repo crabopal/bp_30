@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="adb32ea3-feb0-436b-936e-9ff4d61f4c29">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокКонтентАдреса" category="Object">
+				<xr:TypeId>2f099756-0a85-407c-af0e-b979cd82dd27</xr:TypeId>
+				<xr:ValueId>3bc358ed-b0be-4343-bc93-a867dff6c3ab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокКонтентАдреса" category="Manager">
+				<xr:TypeId>189bec20-f33b-4988-9f4c-d567bf787035</xr:TypeId>
+				<xr:ValueId>0bda228f-5b67-403a-9039-cc5e09195cbd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокКонтентАдреса</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контент: адреса</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Преобразование адресов КИ (JSON) в контракт для ФНС.</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>ОКСМ</Template>
+			<Template>Регионы</Template>
+			<Template>КодыАдресацииРФ</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

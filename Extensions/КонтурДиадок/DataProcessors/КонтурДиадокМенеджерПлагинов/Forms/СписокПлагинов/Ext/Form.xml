@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Плагины</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="ГруппаКоманднаяПанель" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Button name="Добавить" id="3">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Добавить</CommandName>
+					<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="4"/>
+				</Button>
+				<Button name="Удалить" id="5">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Удалить</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="6"/>
+				</Button>
+				<Button name="Обновить" id="7">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="8"/>
+				</Button>
+				<Button name="ПроверитьОбновления" id="9">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПроверитьОбновления</CommandName>
+					<ExtendedTooltip name="ПроверитьОбновленияРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="ВключитьСлужебные" id="277">
+					<Type>CommandBarHyperlink</Type>
+					<Width>1</Width>
+					<MaxWidth>1</MaxWidth>
+					<CommandName>Form.Command.ВключитьСлужебные</CommandName>
+					<TextColor>style:FormBackColor</TextColor>
+					<ExtendedTooltip name="ВключитьСлужебныеРасширеннаяПодсказка" id="278"/>
+				</Button>
+				<Popup name="ГруппаПодменюСлужебные" id="271">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подменю служебные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПодменюСлужебныеРасширеннаяПодсказка" id="272"/>
+					<ChildItems>
+						<Button name="ЗагрузитьИзФайла" id="273">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+							<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="274"/>
+						</Button>
+						<Button name="СохранитьВФайл" id="275">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.СохранитьВФайл</CommandName>
+							<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="276"/>
+						</Button>
+						<Button name="ИзменитьКаталогОтладки" id="425">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ИзменитьКаталогОтладки</CommandName>
+							<ExtendedTooltip name="ИзменитьКаталогОтладкиРасширеннаяПодсказка" id="426"/>
+						</Button>
+						<Button name="ОткрытьКаталогОтладки" id="381">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ОткрытьКаталогОтладки</CommandName>
+							<ExtendedTooltip name="ОткрытьКаталогОтладкиРасширеннаяПодсказка" id="382"/>
+						</Button>
+						<Button name="ВыключитьСлужебные" id="403">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ВыключитьСлужебные</CommandName>
+							<ExtendedTooltip name="ВыключитьСлужебныеРасширеннаяПодсказка" id="404"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="ГруппаПанель" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДанные" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныеРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<Table name="ТаблицаПлагинов" id="17">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<SelectionMode>SingleRow</SelectionMode>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ТаблицаПлагинов</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПлагиновКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="ТаблицаПлагиновКоманднаяПанель" id="19">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаПлагиновРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="ТаблицаПлагиновСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>ТаблицаПлагинов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПлагиновСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ТаблицаПлагиновСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПлагиновСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>ТаблицаПлагинов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПлагиновСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ТаблицаПлагиновСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПлагиновУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>ТаблицаПлагинов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПлагиновУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ТаблицаПлагиновУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ТаблицаПлагиновПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ТаблицаПлагиновГруппаПредставление" id="347">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица плагинов группа представление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица плагинов группа представление</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ТаблицаПлагиновГруппаПредставлениеРасширеннаяПодсказка" id="348"/>
+									<ChildItems>
+										<PictureField name="ТаблицаПлагиновКартинкаСостояние" id="343">
+											<DataPath>ТаблицаПлагинов.КартинкаСостояние</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ValuesPicture>
+												<xr:Abs>ValuesPicture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="ТаблицаПлагиновКартинкаСостояниеКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="ТаблицаПлагиновКартинкаСостояниеРасширеннаяПодсказка" id="345"/>
+										</PictureField>
+										<InputField name="ТаблицаПлагиновПредставление" id="42">
+											<DataPath>ТаблицаПлагинов.Представление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТаблицаПлагиновПредставлениеКонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="ТаблицаПлагиновПредставлениеРасширеннаяПодсказка" id="44"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТаблицаПлагиновИд" id="38">
+									<DataPath>ТаблицаПлагинов.Ид</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновИдКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ТаблицаПлагиновИдРасширеннаяПодсказка" id="40"/>
+								</InputField>
+								<InputField name="ТаблицаПлагиновВерсия" id="46">
+									<DataPath>ТаблицаПлагинов.Версия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>9</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновВерсияКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ТаблицаПлагиновВерсияРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="ТаблицаПлагиновСостояние" id="50">
+									<DataPath>ТаблицаПлагинов.Состояние</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновСостояниеКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТаблицаПлагиновСостояниеРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ТаблицаПлагиновОписание" id="54">
+									<DataPath>ТаблицаПлагинов.Описание</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновОписаниеКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ТаблицаПлагиновОписаниеРасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="ТаблицаПлагиновПроект" id="58">
+									<DataPath>ТаблицаПлагинов.Проект</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновПроектКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ТаблицаПлагиновПроектРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<CheckBoxField name="ТаблицаПлагиновЕстьОбновление" id="88">
+									<DataPath>ТаблицаПлагинов.ЕстьОбновление</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаПлагиновЕстьОбновлениеКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ТаблицаПлагиновЕстьОбновлениеРасширеннаяПодсказка" id="90"/>
+								</CheckBoxField>
+								<PictureField name="ТаблицаПлагиновКартинкаОбновление" id="92">
+									<DataPath>ТаблицаПлагинов.КартинкаОбновление</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТаблицаПлагиновКартинкаОбновлениеКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ТаблицаПлагиновКартинкаОбновлениеРасширеннаяПодсказка" id="94"/>
+								</PictureField>
+								<InputField name="ТаблицаПлагиновОписаниеОшибки" id="129">
+									<DataPath>ТаблицаПлагинов.ОписаниеОшибки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновОписаниеОшибкиКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ТаблицаПлагиновОписаниеОшибкиРасширеннаяПодсказка" id="131"/>
+								</InputField>
+								<CheckBoxField name="ТаблицаПлагиновЕстьНастройки" id="138">
+									<DataPath>ТаблицаПлагинов.ЕстьНастройки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаПлагиновЕстьНастройкиКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ТаблицаПлагиновЕстьНастройкиРасширеннаяПодсказка" id="140"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаПлагиновАдресДокументации" id="123">
+									<DataPath>ТаблицаПлагинов.АдресДокументации</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаПлагиновАдресДокументацииКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ТаблицаПлагиновАдресДокументацииРасширеннаяПодсказка" id="125"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнформация" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>45</Width>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияЗаголовокПлагина" id="96">
+							<Font height="12" bold="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Заголовок&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияЗаголовокПлагинаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ДекорацияЗаголовокПлагинаРасширеннаяПодсказка" id="98"/>
+						</LabelDecoration>
+						<CommandBar name="ГруппаИнформацияКП1" id="254">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация к п1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация к п1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаИнформацияКП1РасширеннаяПодсказка" id="255"/>
+							<ChildItems>
+								<Button name="Отключить" id="101">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Отключить</CommandName>
+									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="102"/>
+								</Button>
+								<Button name="Включить" id="103">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Включить</CommandName>
+									<ExtendedTooltip name="ВключитьРасширеннаяПодсказка" id="104"/>
+								</Button>
+								<Button name="ОбновитьПлагин" id="105">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОбновитьПлагин</CommandName>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОбновитьПлагинРасширеннаяПодсказка" id="106"/>
+								</Button>
+								<Button name="Настройки" id="136">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Настройки</CommandName>
+									<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="137"/>
+								</Button>
+								<Button name="Подробнее" id="127">
+									<Type>CommandBarHyperlink</Type>
+									<CommandName>Form.Command.Подробнее</CommandName>
+									<ExtendedTooltip name="ПодробнееРасширеннаяПодсказка" id="128"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<LabelDecoration name="ИнформацияОПлагине" id="120">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Информация о плагине&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИнформацияОПлагинеКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ИнформацияОПлагинеРасширеннаяПодсказка" id="122"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияОписаниеОшибки" id="133">
+							<TextColor>style:NegativeTextColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Декорация описание ошибки&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОписаниеОшибкиКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="ДекорацияОписаниеОшибкиРасширеннаяПодсказка" id="135"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокМенеджерПлагинов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КонфигурацияПриложения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КонфигурацияОбновлятора" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация обновлятора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТаблицаПлагинов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица плагинов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ид" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ид</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Версия" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Проект" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьОбновление" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть обновление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КартинкаОбновление" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка обновление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="АдресДокументации" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес документации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОписаниеОшибки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КартинкаСостояние" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьНастройки" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭтоВнешняяОбработка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это внешняя обработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХранилищеПлагинов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище плагинов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиПрокси" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КаталогОтладки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог отладки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимОтладки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отладки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновВерсия</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновСостояние</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПлагинов.Состояние</dcsset:left>
+						<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Включен</dcsset:right>
+						<dcsset:right xsi:type="xs:string">Отладка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#828282</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновСостояние</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПлагинов.Состояние</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Есть ошибки</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновПредставление</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновСостояние</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПлагиновВерсия</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПлагинов.Состояние</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Отладка</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Добавить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Добавить</Action>
+		</Command>
+		<Command name="Удалить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Удалить</Action>
+		</Command>
+		<Command name="Обновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ПроверитьОбновления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить обновления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьОбновления</Action>
+		</Command>
+		<Command name="Отключить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отключить</Action>
+		</Command>
+		<Command name="Включить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Включить</Action>
+		</Command>
+		<Command name="ОбновитьПлагин" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить плагин</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПлагин</Action>
+		</Command>
+		<Command name="Подробнее" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробнее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробнее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подробнее</Action>
+		</Command>
+		<Command name="Настройки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="СохранитьВФайл" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВФайл</Action>
+		</Command>
+		<Command name="ВключитьСлужебные" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<Shortcut>Ctrl+Shift+F12</Shortcut>
+			<Action>ВключитьСлужебные</Action>
+		</Command>
+		<Command name="ОткрытьКаталогОтладки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог отладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть каталог отладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКаталогОтладки</Action>
+		</Command>
+		<Command name="ВыключитьСлужебные" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выключить служебные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выключить служебные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыключитьСлужебные</Action>
+		</Command>
+		<Command name="ИзменитьКаталогОтладки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить каталог отладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить каталог отладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьКаталогОтладки</Action>
+		</Command>
+	</Commands>
+</Form>

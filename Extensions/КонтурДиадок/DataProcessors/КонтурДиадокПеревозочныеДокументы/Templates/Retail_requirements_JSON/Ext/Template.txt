@@ -1,0 +1,4370 @@
+﻿{
+    "version": "2.0",
+    "updated": "2026-09-15",
+    "networks_settings": [
+        {
+            "net_code": "tander",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "together",
+                        "separator": ","
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "together",
+                        "separator": ","
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_tander",
+                                "text_condition": "Обязательно для поставщика аптечной сети."
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "together",
+                        "separator": ","
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "together",
+                        "separator": ","
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "x5",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_x5",
+                                "text_condition": "Только один номер DESADV (или УПД)."
+                            }
+                        ],
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "auchan",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "av",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "aromatniy_mir",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "atrus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "bonjour",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "bristol_rc",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "bottle",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_bottle",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_bottle",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "vinlab",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_vinlab",
+                                "text_condition": "Обязательно, если поставка безалкогольной продукции"
+                            }
+                        ],
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_vinlab",
+                                "text_condition": "Обязательно, если поставка безалкогольной продукции"
+                            }
+                        ],
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_vinlab",
+                                "text_condition": "Обязательно, если поставка безалкогольной продукции"
+                            }
+                        ],
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_vinlab",
+                                "text_condition": "Обязательно, если поставка безалкогольной продукции"
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_vinlab",
+                                "text_condition": "Обязательно, если поставка безалкогольной продукции"
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "vse_instrumenty",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Vyatushka",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "hyperglobus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "nash_magaz",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_nash_magaz",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_nash_magaz",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "detmir",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_detmir",
+                                "text_condition": "Обязательно для локальных поставщиков."
+                            }
+                        ],
+                        "identifier": "номер_заказа",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_detmir",
+                                "text_condition": "Обязательно для локальных поставщиков."
+                            }
+                        ],
+                        "identifier": "дата_заказа",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "2_detmir",
+                                "text_condition": "Распространяется на локальных поставщиков."
+                            }
+                        ],
+                        "identifier": "номер_накладной",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "2_detmir",
+                                "text_condition": "Распространяется на локальных поставщиков."
+                            }
+                        ],
+                        "identifier": "дата_накладной",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "optional",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "yabloko",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "yarche",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "krasnoebeloe",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "colorlon",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "lama",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "Номер заказа",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресИнф",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "lenta",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_lenta",
+                                "text_condition": "Обязательно, если работа производится по EDI."
+                            }
+                        ],
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_lenta",
+                                "text_condition": "Обязательно, если работа производится по EDI."
+                            }
+                        ],
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Lunda",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "mariara",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "metro",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADVNumber",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "PrimaryDocNumber",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "metropolis",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "separate",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_metropolis",
+                                "text_condition": "Обязательно,если поставка по EDI."
+                            }
+                        ],
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "monetka",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": "required"
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "lowprice",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "ozon_ru",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": "optional"
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "ok",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "UPD",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "UPD_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Pervyj_Semejnyj",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Pervym_delom",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "plovdiv",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "remi",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "1_remi",
+                                "text_condition": "Обязательно,если поставка не по EDI."
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "severniy_gradus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "7_shagov",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "tabris_edixml.xml",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "номер_УПД",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "дата_УПД",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "fixprice",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "1C_DA!",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "submariner",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "yarmarka",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "umniy_retail",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Apeks_pljus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "batir",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Baris",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "bahetle",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "VilkaLozhka",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "vprok",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "lenobpotrebsouz",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "Gorilka_edixml",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "Gorilka_edixml_1",
+                                "text_condition": "Обязательно, если работа производится не по EDI."
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "Gorilka_edixml_1",
+                                "text_condition": "Обязательно, если работа производится не по EDI."
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "SamaraAlkoProm",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "SamaraAlkoProm_1",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "SamaraAlkoProm_1",
+                                "text_condition": "Обязательно, если работа производится не по EDI"
+                            }
+                        ],
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "dixi",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "dobrostroi",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "dobrocen",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "dobrinya",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "yola_market",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "yola_market_MSK",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "samberi",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "pelikan_vld",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "systema_globus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": "required"
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "city_gourmet",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": "required"
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "slata",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "tri_tseny",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "ulybka_radugi",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "chesnok",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "chesnok_1",
+                                "text_condition": "Обязательно, если работа производится по EDI"
+                            }
+                        ],
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "chesnok_2",
+                                "text_condition": "Если работа производится по EDI"
+                            }
+                        ],
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": "optional",
+                        "requiredCondition": [
+                            {
+                                "code_condition": "chesnok_2",
+                                "text_condition": "Если работа производится по EDI"
+                            }
+                        ],
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "ts_yabloko",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "afina",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "verniuy",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "vulcan",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "piv_prichal",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "myasnaya_lavka",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "poseidon",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "rosal24",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": "required"
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": "required",
+                    "xml_attribute": "АдресРФ",
+                    "possible_adr": null
+                }
+            }
+        },
+        {
+            "net_code": "sladkaya-jizn-plus",
+            "requirements": {
+                "AddChecks": {
+                    "OneOrder": null
+                },
+                "infoFields": {
+                    "format_xml": "together",
+                    "ORDERS": {
+                        "required": "required",
+                        "requiredCondition": null,
+                        "identifier": "ORDERS",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "ORDERS_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "ORDERS_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "DESADV_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "DESADV_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC",
+                        "writeMode": "separate",
+                        "separator": null
+                    },
+                    "INVOIC_DATE": {
+                        "required": null,
+                        "requiredCondition": null,
+                        "identifier": "INVOIC_DATE",
+                        "writeMode": "separate",
+                        "separator": null
+                    }
+                },
+                "delivery_gln": {
+                    "required": null,
+                    "xml_attribute": null,
+                    "possible_adr": null
+                }
+            }
+        }
+    ]
+}

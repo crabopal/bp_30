@@ -1,0 +1,1208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Диадок: Выбор сценария</v8:content>
+		</v8:item>
+	</Title>
+	<Height>30</Height>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="29">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="30"/>
+			</Button>
+			<Button name="УстановитьПоУмолчанию" id="93">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<Width>30</Width>
+				<Height>1</Height>
+				<CommandName>Form.Command.УстановитьПоУмолчанию</CommandName>
+				<Picture>
+					<xr:Abs>Picture.png</xr:Abs>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="УстановитьПоУмолчаниюРасширеннаяПодсказка" id="94"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="79">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<UsualGroup name="Группа11" id="248">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="249"/>
+					<ChildItems>
+						<Table name="Сценарии" id="55">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Сценарии</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СценарииКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="СценарииКоманднаяПанель" id="57">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СценарииРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="СценарииСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>Сценарии</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СценарииСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="СценарииСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СценарииСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>Сценарии</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СценарииСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="СценарииСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СценарииУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>Сценарии</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СценарииУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="СценарииУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СценарииВыбор</Event>
+								<Event name="OnActivateRow">СценарииПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<PictureField name="СценарииНомерКартинки" id="81">
+									<DataPath>Сценарии.НомерКартинки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInFooter>false</ShowInFooter>
+									<Width>1</Width>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СценарииНомерКартинкиКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="СценарииНомерКартинкиРасширеннаяПодсказка" id="83"/>
+								</PictureField>
+								<ColumnGroup name="СценарииГруппа1" id="77">
+									<ReadOnly>true</ReadOnly>
+									<ExtendedTooltip name="СценарииГруппа1РасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<InputField name="СценарииСценарий" id="68">
+											<DataPath>Сценарии.Сценарий</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СценарииСценарийКонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="СценарииСценарийРасширеннаяПодсказка" id="70"/>
+										</InputField>
+										<InputField name="СценарииПредставлениеСценария" id="71">
+											<DataPath>Сценарии.ПредставлениеСценария</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<ContextMenu name="СценарииПредставлениеСценарияКонтекстноеМеню" id="72"/>
+											<ExtendedTooltip name="СценарииПредставлениеСценарияРасширеннаяПодсказка" id="73"/>
+										</InputField>
+										<InputField name="СценарииПодсказкаСценария" id="74">
+											<DataPath>Сценарии.ПодсказкаСценария</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
+											<Height>2</Height>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СценарииПодсказкаСценарияКонтекстноеМеню" id="75"/>
+											<ExtendedTooltip name="СценарииПодсказкаСценарияРасширеннаяПодсказка" id="76"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<PictureField name="СценарииОсновной" id="129">
+									<DataPath>Сценарии.Основной</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Abs>ValuesPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СценарииОсновнойКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="СценарииОсновнойРасширеннаяПодсказка" id="131"/>
+								</PictureField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОписаниеСценария" id="5">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа описание сценария</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаОписаниеСценарияРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОписаниеВыбранногоСценария" id="95">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание выбранного сценария</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа описание выбранного сценария</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОписаниеВыбранногоСценарияРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКтоЗаказываетПеревозку" id="150">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кто заказывает перевозку</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кто заказывает перевозку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаКтоЗаказываетПеревозкуРасширеннаяПодсказка" id="151"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ7" id="152">
+											<Width>1</Width>
+											<ContextMenu name="ДекорацияОтступ7КонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ДекорацияОтступ7РасширеннаяПодсказка" id="154"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаКтоЗаказываетПеревозкуОбщая" id="132">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКтоЗаказываетПеревозкуОбщаяРасширеннаяПодсказка" id="133"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКтоЗаказываетПеревозкуПометки" id="146">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКтоЗаказываетПеревозкуПометкиРасширеннаяПодсказка" id="147"/>
+													<ChildItems>
+														<UsualGroup name="Группа1" id="219">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="220"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПродавецПусто" id="213">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку продавец пусто</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПродавецПустоКонтекстноеМеню" id="214"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПродавецПустоРасширеннаяПодсказка" id="215"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПродавец" id="143">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку продавец</v8:content>
+																		</v8:item>
+																	</Title>
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПродавецКонтекстноеМеню" id="144"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПродавецРасширеннаяПодсказка" id="145"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа2" id="221">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="222"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывозПусто" id="216">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку покупатель самовывоз пусто</v8:content>
+																		</v8:item>
+																	</Title>
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывозПустоКонтекстноеМеню" id="217"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывозПустоРасширеннаяПодсказка" id="218"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывоз" id="140">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку покупатель самовывоз</v8:content>
+																		</v8:item>
+																	</Title>
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывозКонтекстноеМеню" id="141"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПокупательСамовывозРасширеннаяПодсказка" id="142"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа7" id="284">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="285"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПокупательПусто" id="286">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку покупатель пусто</v8:content>
+																		</v8:item>
+																	</Title>
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПокупательПустоКонтекстноеМеню" id="287"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПокупательПустоРасширеннаяПодсказка" id="288"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоЗаказываетПеревозкуПокупатель" id="289">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка кто заказывает перевозку покупатель</v8:content>
+																		</v8:item>
+																	</Title>
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоЗаказываетПеревозкуПокупательКонтекстноеМеню" id="290"/>
+																	<ExtendedTooltip name="ПометкаКтоЗаказываетПеревозкуПокупательРасширеннаяПодсказка" id="291"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКтоЗаказываетПеревозкуЗначения" id="148">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку значения</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку значения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКтоЗаказываетПеревозкуЗначенияРасширеннаяПодсказка" id="149"/>
+													<ChildItems>
+														<LabelDecoration name="КтоЗаказываетПеревозкуПродавец" id="134">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Мы (продавец)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоЗаказываетПеревозкуПродавецКонтекстноеМеню" id="135"/>
+															<ExtendedTooltip name="КтоЗаказываетПеревозкуПродавецРасширеннаяПодсказка" id="136"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоЗаказываетПеревозкуПокупательСамовывоз" id="281">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Покупатель (самовывоз)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоЗаказываетПеревозкуПокупательСамовывозКонтекстноеМеню" id="282"/>
+															<ExtendedTooltip name="КтоЗаказываетПеревозкуПокупательСамовывозРасширеннаяПодсказка" id="283"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоЗаказываетПеревозкуПокупатель" id="137">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Мы (покупатель)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоЗаказываетПеревозкуПокупательКонтекстноеМеню" id="138"/>
+															<ExtendedTooltip name="КтоЗаказываетПеревозкуПокупательРасширеннаяПодсказка" id="139"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаМестоФактическойПогрузки" id="155">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Место фактической погрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кто заказывает перевозку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаМестоФактическойПогрузкиРасширеннаяПодсказка" id="156"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ8" id="157">
+											<Width>1</Width>
+											<ContextMenu name="ДекорацияОтступ8КонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="ДекорацияОтступ8РасширеннаяПодсказка" id="159"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаМестоФактическойПогрузкиОбщая" id="160">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаМестоФактическойПогрузкиОбщаяРасширеннаяПодсказка" id="161"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаМестоФактическойПогрузкиПометки" id="162">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаМестоФактическойПогрузкиПометкиРасширеннаяПодсказка" id="163"/>
+													<ChildItems>
+														<UsualGroup name="Группа3" id="229">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="230"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаМестоФактическойПогрузкиНашСкладПусто" id="223">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка место фактической погрузки наш склад</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаМестоФактическойПогрузкиНашСкладПустоКонтекстноеМеню" id="224"/>
+																	<ExtendedTooltip name="ПометкаМестоФактическойПогрузкиНашСкладПустоРасширеннаяПодсказка" id="225"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаМестоФактическойПогрузкиНашСклад" id="164">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пометка место фактической погрузки наш склад</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаМестоФактическойПогрузкиНашСкладКонтекстноеМеню" id="165"/>
+																	<ExtendedTooltip name="ПометкаМестоФактическойПогрузкиНашСкладРасширеннаяПодсказка" id="166"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа9" id="303">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="304"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаМестоФактическойПогрузкиСкладПартнераПусто" id="305">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаМестоФактическойПогрузкиСкладПартнераПустоКонтекстноеМеню" id="306"/>
+																	<ExtendedTooltip name="ПометкаМестоФактическойПогрузкиСкладПартнераПустоРасширеннаяПодсказка" id="307"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаМестоФактическойПогрузкиСкладПартнера" id="308">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаМестоФактическойПогрузкиСкладПартнераКонтекстноеМеню" id="309"/>
+																	<ExtendedTooltip name="ПометкаМестоФактическойПогрузкиСкладПартнераРасширеннаяПодсказка" id="310"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаМестоФактическойПогрузкиЗначения" id="170">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку значения</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку значения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаМестоФактическойПогрузкиЗначенияРасширеннаяПодсказка" id="171"/>
+													<ChildItems>
+														<LabelDecoration name="МестоФактическойПогрузкиНашСклад" id="172">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Наш склад</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="МестоФактическойПогрузкиНашСкладКонтекстноеМеню" id="173"/>
+															<ExtendedTooltip name="МестоФактическойПогрузкиНашСкладРасширеннаяПодсказка" id="174"/>
+														</LabelDecoration>
+														<LabelDecoration name="МестоФактическойПогрузкиСкладПартнера" id="311">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Склад партнера (поставщик, ответ-хранение)</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="МестоФактическойПогрузкиСкладПартнераКонтекстноеМеню" id="312"/>
+															<ExtendedTooltip name="МестоФактическойПогрузкиСкладПартнераРасширеннаяПодсказка" id="313"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКтоГотовитЭТРН" id="178">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кто готовит ЭТрН</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кто заказывает перевозку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаКтоГотовитЭТРНРасширеннаяПодсказка" id="179"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ9" id="180">
+											<Width>1</Width>
+											<ContextMenu name="ДекорацияОтступ9КонтекстноеМеню" id="181"/>
+											<ExtendedTooltip name="ДекорацияОтступ9РасширеннаяПодсказка" id="182"/>
+										</LabelDecoration>
+										<UsualGroup name="КтоГотовитЭТРНОбщая" id="183">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кто готовит ЭТРНОбщая</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="КтоГотовитЭТРНОбщаяРасширеннаяПодсказка" id="184"/>
+											<ChildItems>
+												<UsualGroup name="КтоГотовитЭТРНПометки" id="185">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="КтоГотовитЭТРНПометкиРасширеннаяПодсказка" id="186"/>
+													<ChildItems>
+														<UsualGroup name="Группа8" id="242">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="243"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНПродавецПусто" id="233">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНПродавецПустоКонтекстноеМеню" id="234"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНПродавецПустоРасширеннаяПодсказка" id="235"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНПродавец" id="187">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНПродавецКонтекстноеМеню" id="188"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНПродавецРасширеннаяПодсказка" id="189"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа10" id="246">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="247"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНПокупательПусто" id="239">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНПокупательПустоКонтекстноеМеню" id="240"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНПокупательПустоРасширеннаяПодсказка" id="241"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНПокупатель" id="201">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНПокупательКонтекстноеМеню" id="202"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНПокупательРасширеннаяПодсказка" id="203"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа12" id="292">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="293"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНЗаказчикПусто" id="294">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНЗаказчикПустоКонтекстноеМеню" id="295"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНЗаказчикПустоРасширеннаяПодсказка" id="296"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоГотовитЭТРНЗаказчик" id="297">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоГотовитЭТРНЗаказчикКонтекстноеМеню" id="298"/>
+																	<ExtendedTooltip name="ПометкаКтоГотовитЭТРНЗаказчикРасширеннаяПодсказка" id="299"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКтоГотовитЭТРНЗначения" id="193">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто готовит ЭТРНЗначения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКтоГотовитЭТРНЗначенияРасширеннаяПодсказка" id="194"/>
+													<ChildItems>
+														<LabelDecoration name="КтоГотовитЭТРНПродавец" id="195">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Продавец</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоГотовитЭТРНПродавецКонтекстноеМеню" id="196"/>
+															<ExtendedTooltip name="КтоГотовитЭТРНПродавецРасширеннаяПодсказка" id="197"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоГотовитЭТРНПокупатель" id="204">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Покупатель</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоГотовитЭТРНПокупательКонтекстноеМеню" id="205"/>
+															<ExtendedTooltip name="КтоГотовитЭТРНПокупательРасширеннаяПодсказка" id="206"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоГотовитЭТРНЗаказчик" id="300">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заказчик перевозки</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоГотовитЭТРНЗаказчикКонтекстноеМеню" id="301"/>
+															<ExtendedTooltip name="КтоГотовитЭТРНЗаказчикРасширеннаяПодсказка" id="302"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКтоПодписываетЭТРН" id="314">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кто подписывает ЭТрН</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кто заказывает перевозку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаКтоПодписываетЭТРНРасширеннаяПодсказка" id="315"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ10" id="316">
+											<Width>1</Width>
+											<ContextMenu name="ДекорацияОтступ10КонтекстноеМеню" id="317"/>
+											<ExtendedTooltip name="ДекорацияОтступ10РасширеннаяПодсказка" id="318"/>
+										</LabelDecoration>
+										<UsualGroup name="КтоПодписываетЭТРНОбщая" id="319">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кто заказывает перевозку общая</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="КтоПодписываетЭТРНОбщаяРасширеннаяПодсказка" id="320"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКтоПодписываетЭТРНПометки" id="321">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто заказывает перевозку пометки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКтоПодписываетЭТРНПометкиРасширеннаяПодсказка" id="322"/>
+													<ChildItems>
+														<UsualGroup name="Группа13" id="323">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="324"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНПродавецПусто" id="325">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНПродавецПустоКонтекстноеМеню" id="326"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНПродавецПустоРасширеннаяПодсказка" id="327"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНПродавец" id="328">
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНПродавецКонтекстноеМеню" id="329"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНПродавецРасширеннаяПодсказка" id="330"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа14" id="331">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="332"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНЛОППусто" id="333">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНЛОППустоКонтекстноеМеню" id="334"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНЛОППустоРасширеннаяПодсказка" id="335"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНЛОП" id="336">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНЛОПКонтекстноеМеню" id="337"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНЛОПРасширеннаяПодсказка" id="338"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа15" id="339">
+															<Group>AlwaysHorizontal</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="340"/>
+															<ChildItems>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНЭкспедиторПусто" id="341">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНЭкспедиторПустоКонтекстноеМеню" id="342"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНЭкспедиторПустоРасширеннаяПодсказка" id="343"/>
+																</PictureDecoration>
+																<PictureDecoration name="ПометкаКтоПодписываетЭТРНЭкспедитор" id="344">
+																	<NonselectedPictureText>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ываыва</v8:content>
+																		</v8:item>
+																	</NonselectedPictureText>
+																	<Picture>
+																		<xr:Abs>Picture.png</xr:Abs>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПометкаКтоПодписываетЭТРНЭкспедиторКонтекстноеМеню" id="345"/>
+																	<ExtendedTooltip name="ПометкаКтоПодписываетЭТРНЭкспедиторРасширеннаяПодсказка" id="346"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаКтоПодписываетЭТРНЗначения" id="347">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кто готовит ЭТРНЗначения</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКтоПодписываетЭТРНЗначенияРасширеннаяПодсказка" id="348"/>
+													<ChildItems>
+														<LabelDecoration name="КтоПодписываетЭТРНПродавец" id="349">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Продавец</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоПодписываетЭТРНПродавецКонтекстноеМеню" id="350"/>
+															<ExtendedTooltip name="КтоПодписываетЭТРНПродавецРасширеннаяПодсказка" id="351"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоПодписываетЭТРНЛОП" id="352">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ЛОП</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоПодписываетЭТРНЛОПКонтекстноеМеню" id="353"/>
+															<ExtendedTooltip name="КтоПодписываетЭТРНЛОПРасширеннаяПодсказка" id="354"/>
+														</LabelDecoration>
+														<LabelDecoration name="КтоПодписываетЭТРНЭкспедитор" id="355">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Экспедитор</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="КтоПодписываетЭТРНЭкспедиторКонтекстноеМеню" id="356"/>
+															<ExtendedTooltip name="КтоПодписываетЭТРНЭкспедиторРасширеннаяПодсказка" id="357"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСценарий" id="27">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сценарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСценарийРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="51">
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="48">
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="50"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="53">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="ТекущийСценарий" id="15">
+							<DataPath>ТекущийСценарий</DataPath>
+							<Visible>false</Visible>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекущийСценарийКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ТекущийСценарийРасширеннаяПодсказка" id="17"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокПеревозочныеДокументы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТекущийСценарий" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий сценарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Сценарии" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сценарий" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сценарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеСценария" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление сценария</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодсказкаСценария" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка сценария</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКартинки" id="4">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Основной" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КтоЗаказываетПеревозку" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кто заказывает перевозку</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="МестоФактическойПогрузки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место фактической погрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="КтоГотовитЭТРН" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кто готовит ЭТРН</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="КтоПодписываетЭТРН" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кто подписывает ЭТРН</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СценарийПоУмолчанию" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сценарий по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="УстановитьПоУмолчанию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить/убрать сценарий как основной</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данный сценарий будет установлен для новых документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПоУмолчанию</Action>
+		</Command>
+	</Commands>
+</Form>

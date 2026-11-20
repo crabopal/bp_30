@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранитьИЗакрыть" id="83">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьИЗакрытьРасширеннаяПодсказка" id="84"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="63">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Закрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="64"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЭлементыФормы" id="1">
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЭлементыФормыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Pages name="ГруппаСтраницыНастроек" id="101">
+					<ExtendedTooltip name="ГруппаСтраницыНастроекРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<Page name="ГруппаНастройкиДокументовНаОтправку" id="111">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходящие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки сопоставления документов на отправку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаНастройкиДокументовНаОтправкуРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСопоставлениеКатегорийДокументовНаОтправку" id="3">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСопоставлениеКатегорийДокументовНаОтправкуРасширеннаяПодсказка" id="4"/>
+									<ChildItems>
+										<Table name="СопоставленныеДокументыНаОтправку" id="5">
+											<Representation>List</Representation>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>СопоставленныеДокументыНаОтправку</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="СопоставленныеДокументыНаОтправкуКонтекстноеМеню" id="6"/>
+											<AutoCommandBar name="СопоставленныеДокументыНаОтправкуКоманднаяПанель" id="7"/>
+											<ExtendedTooltip name="СопоставленныеДокументыНаОтправкуРасширеннаяПодсказка" id="8"/>
+											<SearchStringAddition name="СопоставленныеДокументыНаОтправкуСтрокаПоиска" id="9">
+												<AdditionSource>
+													<Item>СопоставленныеДокументыНаОтправку</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СопоставленныеДокументыНаОтправкуСтрокаПоискаКонтекстноеМеню" id="10"/>
+												<ExtendedTooltip name="СопоставленныеДокументыНаОтправкуСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="СопоставленныеДокументыНаОтправкуСостояниеПросмотра" id="12">
+												<AdditionSource>
+													<Item>СопоставленныеДокументыНаОтправку</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="СопоставленныеДокументыНаОтправкуСостояниеПросмотраКонтекстноеМеню" id="13"/>
+												<ExtendedTooltip name="СопоставленныеДокументыНаОтправкуСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="СопоставленныеДокументыНаОтправкуУправлениеПоиском" id="15">
+												<AdditionSource>
+													<Item>СопоставленныеДокументыНаОтправку</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="СопоставленныеДокументыНаОтправкуУправлениеПоискомКонтекстноеМеню" id="16"/>
+												<ExtendedTooltip name="СопоставленныеДокументыНаОтправкуУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ВидДокументаДиадокИдентификатор" id="79">
+													<DataPath>СопоставленныеДокументыНаОтправку.ВидДокументаДиадокИдентификатор</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ВидДокументаДиадокИдентификаторКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="ВидДокументаДиадокИдентификаторРасширеннаяПодсказка" id="81"/>
+												</InputField>
+												<InputField name="ВидДокументаДиадокПредставление" id="59">
+													<DataPath>СопоставленныеДокументыНаОтправку.ВидДокументаДиадокПредставление</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>true</DropListButton>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ChooseType>false</ChooseType>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ВидДокументаДиадокПредставлениеКонтекстноеМеню" id="60"/>
+													<ExtendedTooltip name="ВидДокументаДиадокПредставлениеРасширеннаяПодсказка" id="61"/>
+													<Events>
+														<Event name="ChoiceProcessing">КолонкаВидДокументаДиадокОбработкаВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="ВидДокумента1СИсходящие" id="30">
+													<DataPath>СопоставленныеДокументыНаОтправку.ВидДокумента1СИсходящие</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ВидДокумента1СИсходящиеКонтекстноеМеню" id="31"/>
+													<ExtendedTooltip name="ВидДокумента1СИсходящиеРасширеннаяПодсказка" id="32"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПризнакДокументПодготовленНаОтправку" id="36">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Признак готовности документа на отправку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПризнакДокументПодготовленНаОтправкуРасширеннаяПодсказка" id="37"/>
+									<ChildItems>
+										<InputField name="ПризнакПоДокументу" id="38">
+											<DataPath>ПризнакПодготовленногоДокумента</DataPath>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ПризнакПоДокументуКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ПризнакПоДокументуРасширеннаяПодсказка" id="40"/>
+											<Events>
+												<Event name="StartChoice">ПризнакПодготовленногоДокументаНачалоВыбора</Event>
+												<Event name="Clearing">ПризнакПодготовленногоДокументаОчистка</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаНастройкиВходящихДокументов" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Входящие</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки сопоставления входящих документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаНастройкиВходящихДокументовРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<Table name="СопоставленныеДокументыВходящие" id="115">
+									<Representation>List</Representation>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СопоставленныеДокументыВходящие</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СопоставленныеДокументыВходящиеКонтекстноеМеню" id="116"/>
+									<AutoCommandBar name="СопоставленныеДокументыВходящиеКоманднаяПанель" id="117"/>
+									<ExtendedTooltip name="СопоставленныеДокументыВходящиеРасширеннаяПодсказка" id="118"/>
+									<SearchStringAddition name="СопоставленныеДокументыВходящиеСтрокаПоиска" id="119">
+										<AdditionSource>
+											<Item>СопоставленныеДокументыВходящие</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СопоставленныеДокументыВходящиеСтрокаПоискаКонтекстноеМеню" id="120"/>
+										<ExtendedTooltip name="СопоставленныеДокументыВходящиеСтрокаПоискаРасширеннаяПодсказка" id="121"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СопоставленныеДокументыВходящиеСостояниеПросмотра" id="122">
+										<AdditionSource>
+											<Item>СопоставленныеДокументыВходящие</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СопоставленныеДокументыВходящиеСостояниеПросмотраКонтекстноеМеню" id="123"/>
+										<ExtendedTooltip name="СопоставленныеДокументыВходящиеСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СопоставленныеДокументыВходящиеУправлениеПоиском" id="125">
+										<AdditionSource>
+											<Item>СопоставленныеДокументыВходящие</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СопоставленныеДокументыВходящиеУправлениеПоискомКонтекстноеМеню" id="126"/>
+										<ExtendedTooltip name="СопоставленныеДокументыВходящиеУправлениеПоискомРасширеннаяПодсказка" id="127"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ВидЭлектронногоДокументаИдентификатор" id="136">
+											<DataPath>СопоставленныеДокументыВходящие.ВидЭлектронногоДокументаИдентификатор</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ВидЭлектронногоДокументаИдентификаторКонтекстноеМеню" id="137"/>
+											<ExtendedTooltip name="ВидЭлектронногоДокументаИдентификаторРасширеннаяПодсказка" id="138"/>
+										</InputField>
+										<InputField name="ВидЭлектронногоДокументаПредставление" id="140">
+											<DataPath>СопоставленныеДокументыВходящие.ВидЭлектронногоДокументаПредставление</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ВидЭлектронногоДокументаПредставлениеКонтекстноеМеню" id="141"/>
+											<ExtendedTooltip name="ВидЭлектронногоДокументаПредставлениеРасширеннаяПодсказка" id="142"/>
+											<Events>
+												<Event name="ChoiceProcessing">КолонкаВидЭлектронногоДокументаОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ВидДокумента1СВходящие" id="144">
+											<DataPath>СопоставленныеДокументыВходящие.ВидДокумента1СВходящие</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ВидДокумента1СВходящиеКонтекстноеМеню" id="145"/>
+											<ExtendedTooltip name="ВидДокумента1СВходящиеРасширеннаяПодсказка" id="146"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокИнтеграцияДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СопоставленныеДокументыНаОтправку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставленные документы на отправку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ВидДокументаДиадокПредставление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа Диадок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДокумента1СИсходящие" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ВидДокументаДиадокИдентификатор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа диадок идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПризнакПодготовленногоДокумента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак подготовленного документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЭтоВнешняяОбработка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это внешняя обработка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СопоставленныеДокументыВходящие" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставленные документы входящие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="ВидЭлектронногоДокументаИдентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид электронного документа идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидЭлектронногоДокументаПредставление" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид электронного документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидДокумента1СВходящие" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипыДокументов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВидыДокументов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПризнакПоДокументу" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак по документу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Закрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьНастройки</Action>
+		</Command>
+		<Command name="СохранитьИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

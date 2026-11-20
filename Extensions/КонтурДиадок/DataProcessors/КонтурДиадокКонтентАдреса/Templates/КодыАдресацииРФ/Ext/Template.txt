@@ -1,0 +1,206 @@
+﻿[
+  {
+    "code": "1010",
+    "name": "Дом",
+    "type": 1,
+    "order": 1,
+    "classifier": 2
+  },
+  {
+    "code": "1020",
+    "name": "Владение",
+    "type": 1,
+    "order": 2,
+    "classifier": 1
+  },
+  {
+    "code": "1030",
+    "name": "Домовладение",
+    "type": 1,
+    "order": 3,
+    "classifier": 3
+  },
+  {
+    "code": "1034",
+    "name": "Гараж",
+    "type": 1,
+    "order": 4,
+    "classifier": 4
+  },
+  {
+    "code": "1036",
+    "name": "Здание",
+    "type": 1,
+    "order": 5,
+    "classifier": 5
+  },
+  {
+    "code": "1038",
+    "name": "Шахта",
+    "type": 1,
+    "order": 6,
+    "classifier": 6
+  },
+  {
+    "code": "1039",
+    "name": "Земельный участок",
+    "type": 1,
+    "order": 9,
+    "classifier": 9
+  },
+  {
+    "code": "1011",
+    "name": "Строение",
+    "type": 1,
+    "order": 1,
+    "classifier": 7
+  },
+  {
+    "code": "1012",
+    "name": "Сооружение",
+    "type": 1,
+    "order": 1,
+    "classifier": 7
+  },
+  {
+    "code": "1013",
+    "name": "Литера",
+    "type": 1,
+    "order": 1,
+    "classifier": 7
+  },
+  {
+    "code": "1014",
+    "name": "Корпус",
+    "type": 1,
+    "order": 1,
+    "classifier": 7
+  },
+  {
+    "code": "1015",
+    "name": "Подвал",
+    "type": 1,
+    "order": 1,
+    "classifier": 8
+  },
+  {
+    "code": "1016",
+    "name": "Котельная",
+    "type": 1,
+    "order": 1,
+    "classifier": 8
+  },
+  {
+    "code": "1017",
+    "name": "Погреб",
+    "type": 1,
+    "order": 1,
+    "classifier": 8
+  },
+  {
+    "code": "1050",
+    "name": "Корпус",
+    "type": 2,
+    "order": 1
+  },
+  {
+    "code": "1060",
+    "name": "Строение",
+    "type": 2,
+    "order": 2,
+    "classifier": 1
+  },
+  {
+    "code": "1080",
+    "name": "Литера",
+    "type": 2,
+    "order": 3,
+    "classifier": 3
+  },
+  {
+    "code": "1090",
+    "name": "Литер",
+    "type": 2,
+    "order": 6,
+    "classifier": 3
+  },
+  {
+    "code": "1070",
+    "name": "Сооружение",
+    "type": 2,
+    "order": 4,
+    "classifier": 2
+  },
+  {
+    "code": "1040",
+    "name": "Участок",
+    "type": 2,
+    "order": 5
+  },
+  {
+    "code": "2010",
+    "name": "Квартира",
+    "type": 3,
+    "order": 1
+  },
+  {
+    "code": "2030",
+    "name": "Офис",
+    "type": 3,
+    "order": 2
+  },
+  {
+    "code": "2040",
+    "name": "Бокс",
+    "type": 3,
+    "order": 3
+  },
+  {
+    "code": "2020",
+    "name": "Помещение",
+    "type": 3,
+    "order": 4
+  },
+  {
+    "code": "2050",
+    "name": "Комната",
+    "type": 3,
+    "order": 5
+  },
+  {
+    "code": "2060",
+    "name": "Этаж",
+    "type": 3,
+    "order": 6
+  },
+  {
+    "code": "2070",
+    "name": "А/я",
+    "type": 3,
+    "order": 7
+  },
+  {
+    "code": "2080",
+    "name": "В/ч",
+    "type": 3,
+    "order": 8
+  },
+  {
+    "code": "2090",
+    "name": "П/о",
+    "type": 3,
+    "order": 9
+  },
+  {
+    "code": "2010",
+    "name": "кв.",
+    "type": 3,
+    "order": 6
+  },
+  {
+    "code": "2030",
+    "name": "оф.",
+    "type": 3,
+    "order": 7
+  }
+]

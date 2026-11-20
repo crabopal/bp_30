@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Диадок: Настройки документов</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="49">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<Table name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбора" id="28">
+					<Representation>Tree</Representation>
+					<Autofill>true</Autofill>
+					<Width>30</Width>
+					<HeightInTableRows>15</HeightInTableRows>
+					<ChoiceMode>true</ChoiceMode>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>КомпоновщикНастроекСКД.Settings.Filter.FilterAvailableFields</DataPath>
+					<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораКонтекстноеМеню" id="29"/>
+					<AutoCommandBar name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораКоманднаяПанель" id="30">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ФормаВыбрать" id="22">
+								<Type>CommandBarButton</Type>
+								<DefaultButton>true</DefaultButton>
+								<CommandName>Form.Command.Выбрать</CommandName>
+								<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="23"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораРасширеннаяПодсказка" id="31"/>
+					<SearchStringAddition name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСтрокаПоиска" id="32">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбора</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСтрокаПоискаКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСостояниеПросмотра" id="35">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбора</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСостояниеПросмотраКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораУправлениеПоиском" id="38">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбора</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораУправлениеПоискомКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборДоступныеПоляОтбораУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+					</SearchControlAddition>
+				</Table>
+				<Table name="КомпоновщикНастроекСКДНастройкиОтбор" id="1">
+					<Representation>Tree</Representation>
+					<Autofill>true</Autofill>
+					<Width>60</Width>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>КомпоновщикНастроекСКД.Settings.Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="КомпоновщикНастроекСКДНастройкиОтборКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="КомпоновщикНастроекСКДНастройкиОтборСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпоновщикНастроекСКДНастройкиОтборСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпоновщикНастроекСКДНастройкиОтборУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>КомпоновщикНастроекСКДНастройкиОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпоновщикНастроекСКДНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="КомпоновщикНастроекСКДНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокПеревозочныеДокументы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КомпоновщикНастроекСКД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик настроек СКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторНастройки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МетаданныеДокумента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МетаданныеДокументаПредставление" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные документа представление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресНастройкиСКД" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес настройки СКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
+</Form>

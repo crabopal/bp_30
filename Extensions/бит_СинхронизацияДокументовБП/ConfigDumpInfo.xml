@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="AccountingRegister.Хозрасчетный" id="f87bf415-402f-400d-8c20-f21df45dcf7c" configVersion="da663d2e26361607b66024246e1518d3f116eb5d"/>
+		<Metadata name="CommonModule.ОбменДаннымиСервер" id="10dc517d-f02c-420b-9644-070177dec709" configVersion="d476e1a043665b12381bbf54b3099624360106dd"/>
+		<Metadata name="CommonModule.ОбменДаннымиСервер.Module" id="10dc517d-f02c-420b-9644-070177dec709.0" configVersion="6ff730ca4e266fd22f3dd2690ab90ad5cab6ca81"/>
+		<Metadata name="CommonModule.ОбменДаннымиСобытия" id="a0436bbe-0d80-4a04-aff9-f7a193d77f33" configVersion="64324d8653f256d294a70f0cd0df8baf94f069be"/>
+		<Metadata name="CommonModule.ОбменДаннымиСобытия.Module" id="a0436bbe-0d80-4a04-aff9-f7a193d77f33.0" configVersion="fd268ce6891c6aa2a171a350cbd1d5338a6a0599"/>
+		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый" id="c6ada2d6-cbed-4e81-aaa5-f678e9d0e649" configVersion="d2579dcf510381e74375441304c54aa3536b56b5"/>
+		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый.Module" id="c6ada2d6-cbed-4e81-aaa5-f678e9d0e649.0" configVersion="82fa339606c25bd95111a71f89d30c4f6679ad5d"/>
+		<Metadata name="CommonModule.бит_РегистрацияДокументовБП" id="839476d5-2a26-4450-8b9f-8a4628ca243f" configVersion="c5a0480bfca3b9f6c3301e92a39773eb2a1aa790"/>
+		<Metadata name="CommonModule.бит_РегистрацияДокументовБП.Module" id="839476d5-2a26-4450-8b9f-8a4628ca243f.0" configVersion="009af59ed5d5700a6c904a9b655b70916e40086a"/>
+		<Metadata name="Configuration.бит_СинхронизацияДокументовБП" id="4c0eafe2-c20e-4a34-8c8c-a594fba68c87" configVersion="258d2ffa2c602aebae2d58c04b10346c8f6fb272"/>
+		<Metadata name="EventSubscription.бит_РегистрацияДвиженийХозрасчетный" id="7c1e4a2b-6d58-4f13-9a70-2b8e5c91d4aa" configVersion="46b051ed3e803830708bd73c8ede4ffd1fcf93a6"/>
+		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="fe64a530-57cd-4eeb-b02e-b46218273c28" configVersion="46c9d0c754c31722059c45374f5b747f179bfebd">
+			<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Attribute.бит_ОтбиратьДокументыПоПрефиксу" id="40e2a109-9314-4660-8cdf-10840dd904a4"/>
+		</Metadata>
+		<Metadata name="InformationRegister.бит_ДокументыПолученныеУзломУТ" id="4d5f1392-75ef-4a4b-a6e6-995ce4245296" configVersion="fae2d981bd2b457899abb787137361797450a8da">
+			<Metadata name="InformationRegister.бит_ДокументыПолученныеУзломУТ.Dimension.Узел" id="2a1fc533-029f-40d4-ad94-934343dd6deb"/>
+			<Metadata name="InformationRegister.бит_ДокументыПолученныеУзломУТ.Dimension.Документ" id="ea4d32a5-4fce-4adc-b81e-d1ee2e01906a"/>
+		</Metadata>
+		<Metadata name="Role.бит_ОсновнаяРоль" id="c372e8ba-75ef-477f-8dff-e1398c19b3fd" configVersion="853e3217e698c1c670a5b8fef4db7e16bfbfcf98"/>
+		<Metadata name="Role.бит_ОсновнаяРоль.Rights" id="c372e8ba-75ef-477f-8dff-e1398c19b3fd.0" configVersion="40b066ac095ab416316b3ffb8e6a9336607665c5"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

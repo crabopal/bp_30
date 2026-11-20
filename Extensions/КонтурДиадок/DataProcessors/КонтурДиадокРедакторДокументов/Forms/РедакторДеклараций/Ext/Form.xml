@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Страна происхождения и декларации на товары</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПрименить" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ФормаПрименитьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаОтмена" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ТоварнаяСтрока" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка документа</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ТоварнаяСтрокаРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="НомерСтроки" id="12">
+					<DataPath>НомерСтроки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер строки</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НомерСтрокиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="НомерСтрокиРасширеннаяПодсказка" id="14"/>
+				</InputField>
+				<InputField name="Товар" id="15">
+					<DataPath>Товар</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТоварКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="17"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Пояснение" id="18">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код страны и номер ДТ относятся к декларации, а не к РНПТ.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="20"/>
+		</LabelDecoration>
+		<Table name="Декларации" id="21">
+			<Representation>List</Representation>
+			<DataPath>Декларации</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДекларацииКонтекстноеМеню" id="22"/>
+			<AutoCommandBar name="ДекларацииКоманднаяПанель" id="23">
+				<ChildItems>
+					<Button name="ДекларацииДобавить" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьДекларацию</CommandName>
+						<ExtendedTooltip name="ДекларацииДобавитьРасширеннаяПодсказка" id="25"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДекларацииРасширеннаяПодсказка" id="26"/>
+			<SearchStringAddition name="ДекларацииСтрокаПоиска" id="53">
+				<AdditionSource>
+					<Item>Декларации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДекларацииСтрокаПоискаКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ДекларацииСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДекларацииСостояниеПросмотра" id="56">
+				<AdditionSource>
+					<Item>Декларации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДекларацииСостояниеПросмотраКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ДекларацииСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДекларацииУправлениеПоиском" id="59">
+				<AdditionSource>
+					<Item>Декларации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДекларацииУправлениеПоискомКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ДекларацииУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДекларацииКодСтраны" id="27">
+					<DataPath>Декларации.КодСтраны</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код страны</v8:content>
+						</v8:item>
+					</Title>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ДекларацииКодСтраныКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ДекларацииКодСтраныРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ДекларацииНаименованиеСтраныУПД" id="30">
+					<DataPath>Декларации.НаименованияСтран</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страна происхождения</v8:content>
+						</v8:item>
+					</Title>
+					<Width>30</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ДекларацииНаименованиеСтраныУПДКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ДекларацииНаименованиеСтраныУПДРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="OnChange">ДекларацииНаименованиеСтраныУПДПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДекларацииНаименованияСтранУКД" id="33">
+					<DataPath>Декларации.НаименованияСтран</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страны</v8:content>
+						</v8:item>
+					</Title>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДекларацииНаименованияСтранУКДКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ДекларацииНаименованияСтранУКДРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ДекларацииНомерДТ" id="36">
+					<DataPath>Декларации.НомерДТ</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ДТ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекларацииНомерДТКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ДекларацииНомерДТРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ДекларацииНомерДТДо" id="39">
+					<DataPath>Декларации.НомерДТДо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ДТ до</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекларацииНомерДТДоКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ДекларацииНомерДТДоРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ДекларацииНомерДТПосле" id="42">
+					<DataPath>Декларации.НомерДТПосле</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ДТ после</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекларацииНомерДТПослеКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ДекларацииНомерДТПослеРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ДекларацииНомераДТУвеличение" id="45">
+					<DataPath>Декларации.НомераДТУвеличение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номера ДТ увеличения</v8:content>
+						</v8:item>
+					</Title>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДекларацииНомераДТУвеличениеКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ДекларацииНомераДТУвеличениеРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ДекларацииНомераДТУменьшение" id="48">
+					<DataPath>Декларации.НомераДТУменьшение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номера ДТ уменьшения</v8:content>
+						</v8:item>
+					</Title>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДекларацииНомераДТУменьшениеКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ДекларацииНомераДТУменьшениеРасширеннаяПодсказка" id="50"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокРедакторДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НомерСтроки" id="2">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Товар" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипКонтента" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Декларации" id="4">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсходныйИндекс" id="1">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="2">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Товар" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодСтраны" id="4">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованияСтран" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерДТ" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>29</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерДТДо" id="7">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>29</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерДТПосле" id="8">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>29</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомераДТУвеличение" id="9">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомераДТУменьшение" id="10">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтраныМира" id="6">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресДанныхРедактора" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьДекларацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить декларацию</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьДекларацию</Action>
+		</Command>
+		<Command name="Применить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Применить</Action>
+		</Command>
+		<Command name="Отмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>

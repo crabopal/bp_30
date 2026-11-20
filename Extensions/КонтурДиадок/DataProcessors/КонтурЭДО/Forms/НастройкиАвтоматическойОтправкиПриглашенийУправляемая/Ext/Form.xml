@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Автоматическая отправка приглашений</v8:content>
+		</v8:item>
+	</Title>
+	<Width>80</Width>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаУведомлениеТестФункционал" id="1" DisplayImportance="VeryLow">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа уведомление тест функционал</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#FBED9E</BackColor>
+			<ExtendedTooltip name="ГруппаУведомлениеТестФункционалРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУведомлениеТестФункционалЛево" id="3" DisplayImportance="VeryLow">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа уведомление тест функционал лево</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<VerticalSpacing>OneAndHalf</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУведомлениеТестФункционалЛевоРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияУведомлениеТестФункционалЗаголовок" id="5">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="style:TextFont" faceName="Arial" height="14" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Это экспериментальный функционал</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияУведомлениеТестФункционалЗаголовокКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ДекорацияУведомлениеТестФункционалЗаголовокРасширеннаяПодсказка" id="7"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияУведомлениеТестФункционалТекст" id="8">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="style:TextFont" faceName="Arial" height="12" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ваши впечатления и обратная связь помогут сделать его лучше</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияУведомлениеТестФункционалТекстКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДекорацияУведомлениеТестФункционалТекстРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+						<LabelDecoration name="ДекорацияУведомлениеТестФункционалОставьтеОтзыв" id="11">
+							<Font ref="style:TextFont" faceName="Arial" height="12" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оставить отзыв</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияУведомлениеТестФункционалОставьтеОтзывКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ДекорацияУведомлениеТестФункционалОставьтеОтзывРасширеннаяПодсказка" id="13"/>
+							<Events>
+								<Event name="Click">ДекорацияУведомлениеТестФункционалОставьтеОтзывНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureField name="КартинкаКлюч" id="14">
+					<DataPath>КартинкаКлюч</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>11</Width>
+					<Height>4</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<PictureSize>Proportionally</PictureSize>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</Border>
+					<ContextMenu name="КартинкаКлючКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КартинкаКлючРасширеннаяПодсказка" id="16"/>
+				</PictureField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправка" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправка приглашений настройка автоматическая отправка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправкаРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправкаЛево" id="25">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка приглашений настройка автоматическая отправка лево</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправкаЛевоРасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<CheckBoxField name="ОтправлятьАвтоматически" id="27">
+									<DataPath>ОтправлятьАвтоматически</DataPath>
+									<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<TitleLocation>None</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтправлятьАвтоматическиКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ОтправлятьАвтоматическиРасширеннаяПодсказка" id="29"/>
+									<Events>
+										<Event name="OnChange">ОтправкаПриглашенийАвтоматическаяОтправкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправкаПраво" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отправка приглашений настройка автоматическая отправка право</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтправкаПриглашенийНастройкаАвтоматическаяОтправкаПравоРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<LabelDecoration name="АвтоматическаяОтправкаПриглашенийЗаголовок" id="33">
+									<Font ref="style:TextFont" faceName="Arial" height="12" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автоматическая отправка приглашений</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="АвтоматическаяОтправкаПриглашенийЗаголовокКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="АвтоматическаяОтправкаПриглашенийЗаголовокРасширеннаяПодсказка" id="35"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОтправкаПриглашенийАвтоматическаяОтправкаПодсказка" id="36">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>#9E9E9E</TextColor>
+									<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка позволяет автоматически отправить приглашения контрагентам, которые их еще не получали. Данные о контрагентах берутся из документов 1С: накладные, счета на оплату, акт сверки и другие. После отправки приглашения модуль автоматически сопоставит контрагента.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОтправкаПриглашенийАвтоматическаяОтправкаПодсказкаКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ОтправкаПриглашенийАвтоматическаяОтправкаПодсказкаРасширеннаяПодсказка" id="38"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтправкаПриглашенийНастройкаРежимОтправки" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отправка приглашений настройка режим отправки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтправкаПриглашенийНастройкаРежимОтправкиРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<RadioButtonField name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадок" id="41">
+							<DataPath>РежимОтправкиЯщикиДиадок</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>RadioButtons</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Только в ящики Диадока</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<Font ref="style:TextFont" faceName="Arial" height="12" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадокКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадокРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">ОтправкаПриглашенийРежимОтправкиЯщикиДиадокПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<LabelDecoration name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадокПодсказка" id="45">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>#9E9E9E</TextColor>
+							<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправка приглашений будет выполняться только тем контрагентам, у которых есть ящик в Диадоке.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадокПодсказкаКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ОтправкаПриглашенийРежимОтправкиЯщикиДиадокПодсказкаРасширеннаяПодсказка" id="47"/>
+						</LabelDecoration>
+						<RadioButtonField name="ОтправкаПриглашенийРежимОтправкиЯщикВсе" id="48">
+							<DataPath>РежимОтправкиЯщикВсе</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>На все ящики</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<Font ref="style:TextFont" faceName="Arial" height="12" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ОтправкаПриглашенийРежимОтправкиЯщикВсеКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ОтправкаПриглашенийРежимОтправкиЯщикВсеРасширеннаяПодсказка" id="50"/>
+							<Events>
+								<Event name="OnChange">ОтправкаПриглашенийРежимОтправкиЯщикВсеПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<LabelDecoration name="ОтправкаПриглашенийРежимОтправкиЯщикВсеЗаголовок" id="52">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>#9E9E9E</TextColor>
+							<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если контрагент имеет несколько ящиков у разных операторов ЭДО, приглашения отправятся во все, включая ящики Диадока. Настройка не работает с контрагентами из Тензора, а также с операторами, где невозможно выполнить настройку роуминга автоматически.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОтправкаПриглашенийРежимОтправкиЯщикВсеЗаголовокКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ОтправкаПриглашенийРежимОтправкиЯщикВсеЗаголовокРасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОрганизации" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОрганизацииРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияОтправкаПриглашенийОрганизации" id="57">
+					<Font ref="style:TextFont" faceName="Arial" height="12" bold="true" kind="StyleItem" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организации</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияОтправкаПриглашенийОрганизацииКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ДекорацияОтправкаПриглашенийОрганизацииРасширеннаяПодсказка" id="59"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияОтправкаПриглашенийПодсказка" id="60">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>#9E9E9E</TextColor>
+					<Font ref="style:TextFont" faceName="Arial" height="11" kind="StyleItem" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выберите организации, в которых будет выполняться автоматическая отправка приглашений</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияОтправкаПриглашенийПодсказкаКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ДекорацияОтправкаПриглашенийПодсказкаРасширеннаяПодсказка" id="62"/>
+				</LabelDecoration>
+				<Table name="СписокОрганизаций" id="63">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>СписокОрганизаций</DataPath>
+					<RowPictureDataPath>СписокОрганизаций.Picture</RowPictureDataPath>
+					<ContextMenu name="СписокОрганизацийКонтекстноеМеню" id="64"/>
+					<AutoCommandBar name="СписокОрганизацийКоманднаяПанель" id="65"/>
+					<ExtendedTooltip name="СписокОрганизацийРасширеннаяПодсказка" id="66"/>
+					<SearchStringAddition name="СписокОрганизацийСтрокаПоиска" id="67">
+						<AdditionSource>
+							<Item>СписокОрганизаций</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокОрганизацийСтрокаПоискаКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="СписокОрганизацийСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокОрганизацийСостояниеПросмотра" id="70">
+						<AdditionSource>
+							<Item>СписокОрганизаций</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокОрганизацийСостояниеПросмотраКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="СписокОрганизацийСостояниеПросмотраРасширеннаяПодсказка" id="72"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокОрганизацийУправлениеПоиском" id="73">
+						<AdditionSource>
+							<Item>СписокОрганизаций</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокОрганизацийУправлениеПоискомКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="СписокОрганизацийУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="СписокОрганизацийПометка" id="88">
+							<DataPath>СписокОрганизаций.Check</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокОрганизацийПометкаКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="СписокОрганизацийПометкаРасширеннаяПодсказка" id="90"/>
+							<Events>
+								<Event name="OnChange">СписокОрганизацийПометкаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="СписокОрганизацийЗначение" id="84">
+							<DataPath>СписокОрганизаций.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокОрганизацийЗначениеКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="СписокОрганизацийЗначениеРасширеннаяПодсказка" id="86"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КоманднаяПанельПодвал" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КоманднаяПанельПодвалРасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<Button name="Сохранить" id="96">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Сохранить</CommandName>
+					<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="97"/>
+				</Button>
+				<Button name="Отменить" id="94">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Отменить</CommandName>
+					<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="95"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КартинкаКлюч" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтправлятьАвтоматически" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправлять автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимОтправкиЯщикиДиадок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отправки ящики диадок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимОтправкиЯщикВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отправки ящик все</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокОрганизаций" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="Отменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отменить</Action>
+		</Command>
+	</Commands>
+</Form>

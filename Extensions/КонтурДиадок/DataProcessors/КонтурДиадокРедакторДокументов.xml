@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="a177c807-7e22-43f7-87b8-1e68fd4fd83d">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурДиадокРедакторДокументов" category="Object">
+				<xr:TypeId>8cba6a21-82de-4015-af21-339a25fe1fb2</xr:TypeId>
+				<xr:ValueId>271c111f-fcc7-42ce-9739-da37c01a8a0f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурДиадокРедакторДокументов" category="Manager">
+				<xr:TypeId>7bbc49ef-4ae7-40e2-958a-80cc5442fea8</xr:TypeId>
+				<xr:ValueId>9fd5c7fa-bc82-486b-a071-7ed5a451d15d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурДиадокРедакторДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диадок: редактор формализованных документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Редактор маркировки исходящих формализованных документов Диадока</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.КонтурДиадокРедакторДокументов.Form.Клиент</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Клиент</Form>
+			<Form>Клиент_ОФ</Form>
+			<Form>РедакторДокумента</Form>
+			<Form>РедакторДокумента_ОФ</Form>
+			<Form>РедакторПрослеживаемости</Form>
+			<Form>РедакторДеклараций</Form>
+			<Form>РедакторМаркировки</Form>
+			<Form>РедакторМаркировки_ОФ</Form>
+			<Form>РедакторДополнительныхСведений</Form>
+			<Form>РедакторАдреса</Form>
+			<Form>РедакторШапки</Form>
+			<Form>РедакторПокупателя_ОФ</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -1,0 +1,1161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Адрес стороны документа</v8:content>
+		</v8:item>
+	</Title>
+	<Width>85</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Применить" id="150">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Применить</CommandName>
+				<ExtendedTooltip name="ПрименитьРасширеннаяПодсказка" id="151"/>
+			</Button>
+			<Button name="Отмена" id="152">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="153"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Сторона" id="1">
+			<DataPath>Сторона</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сторона документа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="СторонаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СторонаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ВерхняяГруппа" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>
+</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ВерхняяГруппаРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="ВидАдреса" id="4">
+					<DataPath>ВидАдреса</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид адреса</v8:content>
+						</v8:item>
+					</Title>
+					<Width>18</Width>
+					<ContextMenu name="ВидАдресаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ВидАдресаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ВидАдресаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ГлобальныйНомерМеста" id="7">
+					<DataPath>ГлобальныйНомерМеста</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GLN</v8:content>
+						</v8:item>
+					</Title>
+					<Width>15</Width>
+					<ContextMenu name="ГлобальныйНомерМестаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ГлобальныйНомерМестаРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРФ" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>
+</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРФРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<UsualGroup name="РФМестоположение" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Местоположение</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="РФМестоположениеРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="РФИндекс" id="12">
+							<DataPath>РФИндекс</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Индекс</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФИндексКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="РФИндексРасширеннаяПодсказка" id="14"/>
+						</InputField>
+						<InputField name="РФКодРегиона" id="15">
+							<DataPath>РФКодРегиона</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код региона</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФКодРегионаКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="РФКодРегионаРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<InputField name="РФРегион" id="18">
+							<DataPath>РФРегион</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регион</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФРегионКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="РФРегионРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="РФРайон" id="21">
+							<DataPath>РФРайон</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Район</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФРайонКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="РФРайонРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="РФГород" id="24">
+							<DataPath>РФГород</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Город</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФГородКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="РФГородРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="РФНаселенныйПункт" id="27">
+							<DataPath>РФНаселенныйПункт</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Населенный пункт</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФНаселенныйПунктКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="РФНаселенныйПунктРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="РФУлица" id="30">
+							<DataPath>РФУлица</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Улица</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФУлицаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="РФУлицаРасширеннаяПодсказка" id="32"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="РФПомещения" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дом и помещение</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="РФПомещенияРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="РФДом" id="35">
+							<DataPath>РФДом</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дом</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФДомКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="РФДомРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="РФКорпус" id="38">
+							<DataPath>РФКорпус</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корпус</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФКорпусКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="РФКорпусРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="РФКвартира" id="41">
+							<DataPath>РФКвартира</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Квартира / помещение</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФКвартираКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="РФКвартираРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="РФДополнительно" id="44">
+							<DataPath>РФДополнительно</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные сведения</v8:content>
+								</v8:item>
+							</Title>
+							<Width>18</Width>
+							<ContextMenu name="РФДополнительноКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="РФДополнительноРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГАР" id="132">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>
+</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГАРРасширеннаяПодсказка" id="133"/>
+			<ChildItems>
+				<Pages name="СтраницыГАР" id="61">
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="СтраницыГАРРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<Page name="ГАРМестоположение" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Местоположение</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГАРМестоположениеРасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<UsualGroup name="ГАРОсновныеКолонки" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>
+</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГАРОсновныеКолонкиРасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<UsualGroup name="ГАРРегионПоселение" id="93">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Регион и населенный пункт</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<ExtendedTooltip name="ГАРРегионПоселениеРасширеннаяПодсказка" id="94"/>
+											<ChildItems>
+												<InputField name="ГАРИдентификатор" id="63">
+													<DataPath>ГАРИдентификатор</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Идентификатор ГАР</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРИдентификаторКонтекстноеМеню" id="64"/>
+													<ExtendedTooltip name="ГАРИдентификаторРасширеннаяПодсказка" id="65"/>
+												</InputField>
+												<InputField name="ГАРИндекс" id="66">
+													<DataPath>ГАРИндекс</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Индекс</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРИндексКонтекстноеМеню" id="67"/>
+													<ExtendedTooltip name="ГАРИндексРасширеннаяПодсказка" id="68"/>
+												</InputField>
+												<InputField name="ГАРКодРегиона" id="69">
+													<DataPath>ГАРКодРегиона</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Код региона</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРКодРегионаКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="ГАРКодРегионаРасширеннаяПодсказка" id="71"/>
+												</InputField>
+												<InputField name="ГАРРегион" id="72">
+													<DataPath>ГАРРегион</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Регион</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРРегионКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="ГАРРегионРасширеннаяПодсказка" id="74"/>
+												</InputField>
+												<InputField name="ГАРВидРайона" id="75">
+													<DataPath>ГАРВидРайона</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид муниципального района (код)</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРВидРайонаКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="ГАРВидРайонаРасширеннаяПодсказка" id="77"/>
+												</InputField>
+												<InputField name="ГАРРайон" id="78">
+													<DataPath>ГАРРайон</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Муниципальный район / округ</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРРайонКонтекстноеМеню" id="79"/>
+													<ExtendedTooltip name="ГАРРайонРасширеннаяПодсказка" id="80"/>
+												</InputField>
+												<InputField name="ГАРВидПоселения" id="81">
+													<DataPath>ГАРВидПоселения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид поселения (код)</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРВидПоселенияКонтекстноеМеню" id="82"/>
+													<ExtendedTooltip name="ГАРВидПоселенияРасширеннаяПодсказка" id="83"/>
+												</InputField>
+												<InputField name="ГАРПоселение" id="84">
+													<DataPath>ГАРПоселение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Городское / сельское поселение</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРПоселениеКонтекстноеМеню" id="85"/>
+													<ExtendedTooltip name="ГАРПоселениеРасширеннаяПодсказка" id="86"/>
+												</InputField>
+												<InputField name="ГАРВидНаселенногоПункта" id="87">
+													<DataPath>ГАРВидНаселенногоПункта</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид населенного пункта</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРВидНаселенногоПунктаКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="ГАРВидНаселенногоПунктаРасширеннаяПодсказка" id="89"/>
+												</InputField>
+												<InputField name="ГАРНаселенныйПункт" id="90">
+													<DataPath>ГАРНаселенныйПункт</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Населенный пункт</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРНаселенныйПунктКонтекстноеМеню" id="91"/>
+													<ExtendedTooltip name="ГАРНаселенныйПунктРасширеннаяПодсказка" id="92"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГАРУлицаУчасток" id="110">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Улица и участок</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<ExtendedTooltip name="ГАРУлицаУчастокРасширеннаяПодсказка" id="111"/>
+											<ChildItems>
+												<InputField name="ГАРТипПланировочногоЭлемента" id="95">
+													<DataPath>ГАРТипПланировочногоЭлемента</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Тип планировочного элемента</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРТипПланировочногоЭлементаКонтекстноеМеню" id="96"/>
+													<ExtendedTooltip name="ГАРТипПланировочногоЭлементаРасширеннаяПодсказка" id="97"/>
+												</InputField>
+												<InputField name="ГАРПланировочныйЭлемент" id="98">
+													<DataPath>ГАРПланировочныйЭлемент</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Планировочный элемент</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРПланировочныйЭлементКонтекстноеМеню" id="99"/>
+													<ExtendedTooltip name="ГАРПланировочныйЭлементРасширеннаяПодсказка" id="100"/>
+												</InputField>
+												<InputField name="ГАРТипУлицы" id="101">
+													<DataPath>ГАРТипУлицы</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Тип элемента уличной сети</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРТипУлицыКонтекстноеМеню" id="102"/>
+													<ExtendedTooltip name="ГАРТипУлицыРасширеннаяПодсказка" id="103"/>
+												</InputField>
+												<InputField name="ГАРУлица" id="104">
+													<DataPath>ГАРУлица</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Элемент уличной сети</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРУлицаКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="ГАРУлицаРасширеннаяПодсказка" id="106"/>
+												</InputField>
+												<InputField name="ГАРУчасток" id="107">
+													<DataPath>ГАРУчасток</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Земельный участок</v8:content>
+														</v8:item>
+													</Title>
+													<Width>18</Width>
+													<ContextMenu name="ГАРУчастокКонтекстноеМеню" id="108"/>
+													<ExtendedTooltip name="ГАРУчастокРасширеннаяПодсказка" id="109"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ГАРЗданияПомещения" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Здания и помещения</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГАРЗданияПомещенияРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<Table name="Здания" id="57">
+									<Representation>List</Representation>
+									<Height>5</Height>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<DataPath>Здания</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Здания (дом, корпус, строение)</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЗданияКонтекстноеМеню" id="58"/>
+									<AutoCommandBar name="ЗданияКоманднаяПанель" id="60"/>
+									<ExtendedTooltip name="ЗданияРасширеннаяПодсказка" id="59"/>
+									<SearchStringAddition name="ЗданияСтрокаПоиска" id="183">
+										<AdditionSource>
+											<Item>Здания</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗданияСтрокаПоискаКонтекстноеМеню" id="184"/>
+										<ExtendedTooltip name="ЗданияСтрокаПоискаРасширеннаяПодсказка" id="185"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЗданияСостояниеПросмотра" id="186">
+										<AdditionSource>
+											<Item>Здания</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗданияСостояниеПросмотраКонтекстноеМеню" id="187"/>
+										<ExtendedTooltip name="ЗданияСостояниеПросмотраРасширеннаяПодсказка" id="188"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЗданияУправлениеПоиском" id="189">
+										<AdditionSource>
+											<Item>Здания</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗданияУправлениеПоискомКонтекстноеМеню" id="190"/>
+										<ExtendedTooltip name="ЗданияУправлениеПоискомРасширеннаяПодсказка" id="191"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnStartEdit">ЗданияПриНачалеРедактирования</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ЗданияТип" id="51">
+											<DataPath>Здания.Тип</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип здания</v8:content>
+												</v8:item>
+											</Title>
+											<Width>10</Width>
+											<ContextMenu name="ЗданияТипКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ЗданияТипРасширеннаяПодсказка" id="53"/>
+										</InputField>
+										<InputField name="ЗданияНомер" id="54">
+											<DataPath>Здания.Номер</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер</v8:content>
+												</v8:item>
+											</Title>
+											<Width>25</Width>
+											<ContextMenu name="ЗданияНомерКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="ЗданияНомерРасширеннаяПодсказка" id="56"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="ГАРПомещения" id="128">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помещения</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГАРПомещенияРасширеннаяПодсказка" id="129"/>
+									<ChildItems>
+										<InputField name="ГАРТипПомещенияЗдания" id="116">
+											<DataPath>ГАРТипПомещенияЗдания</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип помещения в здании</v8:content>
+												</v8:item>
+											</Title>
+											<Width>18</Width>
+											<ContextMenu name="ГАРТипПомещенияЗданияКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="ГАРТипПомещенияЗданияРасширеннаяПодсказка" id="118"/>
+										</InputField>
+										<InputField name="ГАРПомещениеЗдания" id="119">
+											<DataPath>ГАРПомещениеЗдания</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Помещение в здании</v8:content>
+												</v8:item>
+											</Title>
+											<Width>18</Width>
+											<ContextMenu name="ГАРПомещениеЗданияКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="ГАРПомещениеЗданияРасширеннаяПодсказка" id="121"/>
+										</InputField>
+										<InputField name="ГАРТипПомещенияКвартиры" id="122">
+											<DataPath>ГАРТипПомещенияКвартиры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип помещения в квартире</v8:content>
+												</v8:item>
+											</Title>
+											<Width>18</Width>
+											<ContextMenu name="ГАРТипПомещенияКвартирыКонтекстноеМеню" id="123"/>
+											<ExtendedTooltip name="ГАРТипПомещенияКвартирыРасширеннаяПодсказка" id="124"/>
+										</InputField>
+										<InputField name="ГАРПомещениеКвартиры" id="125">
+											<DataPath>ГАРПомещениеКвартиры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Помещение в квартире</v8:content>
+												</v8:item>
+											</Title>
+											<Width>30</Width>
+											<ContextMenu name="ГАРПомещениеКвартирыКонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="ГАРПомещениеКвартирыРасширеннаяПодсказка" id="127"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСтрокой" id="145">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>
+</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтрокойРасширеннаяПодсказка" id="146"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтрана" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>
+</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтранаРасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<InputField name="ТекстКодСтраны" id="134">
+							<DataPath>ТекстКодСтраны</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код страны</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<ContextMenu name="ТекстКодСтраныКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="ТекстКодСтраныРасширеннаяПодсказка" id="136"/>
+							<Events>
+								<Event name="OnChange">СтранаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТекстСтрана" id="137">
+							<DataPath>ТекстСтрана</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страна</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<ContextMenu name="ТекстСтранаКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="ТекстСтранаРасширеннаяПодсказка" id="139"/>
+							<Events>
+								<Event name="OnChange">СтранаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ТекстАдреса" id="142">
+					<DataPath>ТекстАдреса</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Width>60</Width>
+					<Height>5</Height>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ТекстАдресаКонтекстноеМеню" id="143"/>
+					<ExtendedTooltip name="ТекстАдресаРасширеннаяПодсказка" id="144"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Пояснение" id="147">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес изменяется только в отправляемом XML. При смене вида черновики полей сохраняются до закрытия окна. Проверка по базе ГАР не выполняется.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="148"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="149"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокРедакторДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Сторона" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидАдреса" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГлобальныйНомерМеста" id="4">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеИсходногоАдреса" id="5">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФИндекс" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>6</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФКодРегиона" id="7">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФРегион" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>51</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФРайон" id="9">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФГород" id="10">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФНаселенныйПункт" id="11">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФУлица" id="12">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФДом" id="13">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФКорпус" id="14">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФКвартира" id="15">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РФДополнительно" id="16">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРИдентификатор" id="17">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРИндекс" id="18">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>6</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРКодРегиона" id="19">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРРегион" id="20">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>51</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРВидРайона" id="21">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРРайон" id="22">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРВидПоселения" id="23">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРПоселение" id="24">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРВидНаселенногоПункта" id="25">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРНаселенныйПункт" id="26">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРТипПланировочногоЭлемента" id="27">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРПланировочныйЭлемент" id="28">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРТипУлицы" id="29">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРУлица" id="30">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРУчасток" id="31">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРТипПомещенияЗдания" id="32">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРПомещениеЗдания" id="33">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРТипПомещенияКвартиры" id="34">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ГАРПомещениеКвартиры" id="35">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстКодСтраны" id="36">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>3</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСтрана" id="37">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстАдреса" id="38">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Здания" id="39">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИсходныйИндекс" id="1">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Тип" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номер" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтраныМира" id="40">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Код" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресДанныхРедактора" id="41">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Применить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Применить</Action>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>

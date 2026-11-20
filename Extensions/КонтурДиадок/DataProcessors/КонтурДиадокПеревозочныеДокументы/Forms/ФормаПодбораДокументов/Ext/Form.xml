@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Диадок: Подбор документов</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаБыстрыеОтборы" id="566">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа быстрые отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="567"/>
+			<ChildItems>
+				<Button name="НастройкиПодбора" id="580">
+					<Type>UsualButton</Type>
+					<Width>4</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.НастройкиПодбора</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="НастройкиПодбораРасширеннаяПодсказка" id="581"/>
+				</Button>
+				<Button name="ВыбратьПериод" id="585">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<Height>1</Height>
+					<CommandName>Form.Command.ВыбратьПериод</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ВыбратьПериодРасширеннаяПодсказка" id="586"/>
+				</Button>
+				<InputField name="ОтборРежимПодбора" id="770">
+					<DataPath>ОтборРежимПодбора</DataPath>
+					<Visible>false</Visible>
+					<TitleLocation>None</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заказ-заявка</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ЭЗЗ</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Транспортная накладная</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ЭТрН</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Поручение экспедитору</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ЭПЭ</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ-заявка, ЭТрН</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборРежимПодбораКонтекстноеМеню" id="771"/>
+					<ExtendedTooltip name="ОтборРежимПодбораРасширеннаяПодсказка" id="772"/>
+					<Events>
+						<Event name="OnChange">ОтборРежимПодбораПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборТипДокумента" id="574">
+					<DataPath>ОтборТипДокумента</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор по типу документа основания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ClearButton>true</ClearButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип документа</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборТипДокументаКонтекстноеМеню" id="575"/>
+					<ExtendedTooltip name="ОтборТипДокументаРасширеннаяПодсказка" id="576"/>
+					<Events>
+						<Event name="OnChange">ОтборТипДокументаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборОрганизация" id="571">
+					<DataPath>ОтборОрганизация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор по организации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="572"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="573"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборКонтрагент" id="568">
+					<DataPath>ОтборКонтрагент</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор по контрагенту</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборКонтрагентКонтекстноеМеню" id="569"/>
+					<ExtendedTooltip name="ОтборКонтрагентРасширеннаяПодсказка" id="570"/>
+					<Events>
+						<Event name="OnChange">ОтборКонтрагентПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДокументы" id="548">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>40</Height>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="549"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПользовательскиеНастройки" id="1311">
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПользовательскиеНастройкиРасширеннаяПодсказка" id="1312"/>
+				</UsualGroup>
+				<Table name="СписокДокументов" id="499">
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокДокументов</DataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<UserSettingsGroup>ГруппаПользовательскиеНастройки</UserSettingsGroup>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокДокументовКонтекстноеМеню" id="500"/>
+					<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="501">
+						<ChildItems>
+							<Button name="ВыбратьДокумент" id="970">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыбратьДокумент</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ВыбратьДокументРасширеннаяПодсказка" id="971"/>
+							</Button>
+							<Button name="СписокДокументовОткрытьДокумент" id="1066">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьДокумент</CommandName>
+								<ExtendedTooltip name="СписокДокументовОткрытьДокументРасширеннаяПодсказка" id="1067"/>
+							</Button>
+							<Button name="СписокДокументовСсылкаДокументыОснования" id="1270">
+								<Type>CommandBarHyperlink</Type>
+								<CommandName>Form.Command.ПерейтиПоСсылкеДокументыОснования</CommandName>
+								<ExtendedTooltip name="СписокДокументовСсылкаДокументыОснованияРасширеннаяПодсказка" id="1271"/>
+							</Button>
+							<Popup name="СписокДокументовГруппаУдалить" id="1459">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Удалить</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список документов группа удалить</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="СписокДокументовГруппаУдалитьРасширеннаяПодсказка" id="1460"/>
+								<ChildItems>
+									<Button name="СписокДокументовУдалитьЭТрН" id="1352">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьЭТрН</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокументовУдалитьЭТрНРасширеннаяПодсказка" id="1353"/>
+									</Button>
+									<Button name="СписокДокументовУдалитьЭЗЗ" id="1461">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьЭЗЗ</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокументовУдалитьЭЗЗРасширеннаяПодсказка" id="1462"/>
+									</Button>
+									<Button name="СписокДокументовУдалитьЭПЭ" id="1463">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьЭПЭ</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокДокументовУдалитьЭПЭРасширеннаяПодсказка" id="1464"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="502"/>
+					<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="503">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовСтрокаПоискаКонтекстноеМеню" id="504"/>
+						<ExtendedTooltip name="СписокДокументовСтрокаПоискаРасширеннаяПодсказка" id="505"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокДокументовСостояниеПросмотра" id="506">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовСостояниеПросмотраКонтекстноеМеню" id="507"/>
+						<ExtendedTooltip name="СписокДокументовСостояниеПросмотраРасширеннаяПодсказка" id="508"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокДокументовУправлениеПоиском" id="509">
+						<AdditionSource>
+							<Item>СписокДокументов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокДокументовУправлениеПоискомКонтекстноеМеню" id="510"/>
+						<ExtendedTooltip name="СписокДокументовУправлениеПоискомРасширеннаяПодсказка" id="511"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокДокументовВыбор</Event>
+					</Events>
+					<ChildItems>
+						<PictureField name="СписокДокументовНомерКартинки" id="582">
+							<DataPath>СписокДокументов.НомерКартинки</DataPath>
+							<ShowInHeader>false</ShowInHeader>
+							<ValuesPicture>
+								<xr:Abs>ValuesPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="СписокДокументовНомерКартинкиКонтекстноеМеню" id="583"/>
+							<ExtendedTooltip name="СписокДокументовНомерКартинкиРасширеннаяПодсказка" id="584"/>
+						</PictureField>
+						<LabelField name="СписокДокументовДата" id="518">
+							<DataPath>СписокДокументов.Дата</DataPath>
+							<ContextMenu name="СписокДокументовДатаКонтекстноеМеню" id="519"/>
+							<ExtendedTooltip name="СписокДокументовДатаРасширеннаяПодсказка" id="520"/>
+						</LabelField>
+						<LabelField name="СписокДокументовНомер" id="527">
+							<DataPath>СписокДокументов.Номер</DataPath>
+							<ContextMenu name="СписокДокументовНомерКонтекстноеМеню" id="528"/>
+							<ExtendedTooltip name="СписокДокументовНомерРасширеннаяПодсказка" id="529"/>
+						</LabelField>
+						<LabelField name="СписокДокументовСсылка" id="536">
+							<DataPath>СписокДокументов.Ссылка</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Документ 1С</v8:content>
+								</v8:item>
+							</Title>
+							<CellHyperlink>true</CellHyperlink>
+							<Hiperlink>true</Hiperlink>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<ContextMenu name="СписокДокументовСсылкаКонтекстноеМеню" id="537"/>
+							<ExtendedTooltip name="СписокДокументовСсылкаРасширеннаяПодсказка" id="538"/>
+						</LabelField>
+						<CheckBoxField name="СписокДокументовЕстьЭТрН" id="590">
+							<DataPath>СписокДокументов.ЕстьЭТрН</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭТрН</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокДокументовЕстьЭТрНКонтекстноеМеню" id="591"/>
+							<ExtendedTooltip name="СписокДокументовЕстьЭТрНРасширеннаяПодсказка" id="592"/>
+						</CheckBoxField>
+						<LabelField name="СписокДокументовИдентификаторТрН" id="1447">
+							<DataPath>СписокДокументов.ИдентификаторТрН</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокДокументовИдентификаторТрНКонтекстноеМеню" id="1448"/>
+							<ExtendedTooltip name="СписокДокументовИдентификаторТрНРасширеннаяПодсказка" id="1449"/>
+						</LabelField>
+						<CheckBoxField name="СписокДокументовЕстьЭЗЗ" id="731">
+							<DataPath>СписокДокументов.ЕстьЭЗЗ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭЗЗ</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокДокументовЕстьЭЗЗКонтекстноеМеню" id="732"/>
+							<ExtendedTooltip name="СписокДокументовЕстьЭЗЗРасширеннаяПодсказка" id="733"/>
+						</CheckBoxField>
+						<LabelField name="СписокДокументовИдентификаторЗЗ" id="1451">
+							<DataPath>СписокДокументов.ИдентификаторЗЗ</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокДокументовИдентификаторЗЗКонтекстноеМеню" id="1452"/>
+							<ExtendedTooltip name="СписокДокументовИдентификаторЗЗРасширеннаяПодсказка" id="1453"/>
+						</LabelField>
+						<CheckBoxField name="СписокДокументовЕстьЭПЭ" id="1176">
+							<DataPath>СписокДокументов.ЕстьЭПЭ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЭПЭ</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокДокументовЕстьЭПЭКонтекстноеМеню" id="1177"/>
+							<ExtendedTooltip name="СписокДокументовЕстьЭПЭРасширеннаяПодсказка" id="1178"/>
+						</CheckBoxField>
+						<LabelField name="СписокДокументовИдентификаторПЭ" id="1455">
+							<DataPath>СписокДокументов.ИдентификаторПЭ</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокДокументовИдентификаторПЭКонтекстноеМеню" id="1456"/>
+							<ExtendedTooltip name="СписокДокументовИдентификаторПЭРасширеннаяПодсказка" id="1457"/>
+						</LabelField>
+						<LabelField name="СписокДокументовСуммаДокумента" id="539">
+							<DataPath>СписокДокументов.СуммаДокумента</DataPath>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокДокументовСуммаДокументаКонтекстноеМеню" id="540"/>
+							<ExtendedTooltip name="СписокДокументовСуммаДокументаРасширеннаяПодсказка" id="541"/>
+						</LabelField>
+						<LabelField name="СписокДокументовГрузоотправитель" id="512">
+							<DataPath>СписокДокументов.Грузоотправитель</DataPath>
+							<ContextMenu name="СписокДокументовГрузоотправительКонтекстноеМеню" id="513"/>
+							<ExtendedTooltip name="СписокДокументовГрузоотправительРасширеннаяПодсказка" id="514"/>
+						</LabelField>
+						<LabelField name="СписокДокументовГрузополучатель" id="515">
+							<DataPath>СписокДокументов.Грузополучатель</DataPath>
+							<ContextMenu name="СписокДокументовГрузополучательКонтекстноеМеню" id="516"/>
+							<ExtendedTooltip name="СписокДокументовГрузополучательРасширеннаяПодсказка" id="517"/>
+						</LabelField>
+						<LabelField name="СписокДокументовКонтрагент" id="524">
+							<DataPath>СписокДокументов.Контрагент</DataPath>
+							<ContextMenu name="СписокДокументовКонтрагентКонтекстноеМеню" id="525"/>
+							<ExtendedTooltip name="СписокДокументовКонтрагентРасширеннаяПодсказка" id="526"/>
+						</LabelField>
+						<LabelField name="СписокДокументовОрганизация" id="530">
+							<DataPath>СписокДокументов.Организация</DataPath>
+							<ContextMenu name="СписокДокументовОрганизацияКонтекстноеМеню" id="531"/>
+							<ExtendedTooltip name="СписокДокументовОрганизацияРасширеннаяПодсказка" id="532"/>
+						</LabelField>
+						<LabelField name="СписокДокументовТипДокумента" id="542">
+							<DataPath>СписокДокументов.ТипДокумента</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="СписокДокументовТипДокументаКонтекстноеМеню" id="543"/>
+							<ExtendedTooltip name="СписокДокументовТипДокументаРасширеннаяПодсказка" id="544"/>
+						</LabelField>
+						<LabelField name="СписокДокументовТипДокументаПредставление" id="587">
+							<DataPath>СписокДокументов.ТипДокументаПредставление</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип документа</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокДокументовТипДокументаПредставлениеКонтекстноеМеню" id="588"/>
+							<ExtendedTooltip name="СписокДокументовТипДокументаПредставлениеРасширеннаяПодсказка" id="589"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="КоманднаяПанельСписокВыбранныхДокументов" id="1227">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КоманднаяПанельСписокВыбранныхДокументовРасширеннаяПодсказка" id="1228"/>
+					<ChildItems>
+						<RadioButtonField name="РежимСозданияДокументов" id="1223">
+							<DataPath>РежимСозданияДокументов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создавать</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Один документ на все выбранные</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Отдельный документ для каждого</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="РежимСозданияДокументовКонтекстноеМеню" id="1224"/>
+							<ExtendedTooltip name="РежимСозданияДокументовРасширеннаяПодсказка" id="1225">
+								<Title formatted="true"/>
+							</ExtendedTooltip>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаКнопки" id="1229">
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="1230"/>
+							<ChildItems>
+								<Button name="ВыполнитьСозданиеЭТрН" id="497">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьСозданиеЭТрН</CommandName>
+									<ExtendedTooltip name="ВыполнитьСозданиеЭТрНРасширеннаяПодсказка" id="498"/>
+								</Button>
+								<Button name="ВыполнитьСозданиеЗаказаЗаявки" id="495">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьСозданиеЗаказаЗаявки</CommandName>
+									<ExtendedTooltip name="ВыполнитьСозданиеЗаказаЗаявкиРасширеннаяПодсказка" id="496"/>
+								</Button>
+								<Button name="ВыполнитьСозданиеЭПЭ" id="1174">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыполнитьСозданиеЭПЭ</CommandName>
+									<ExtendedTooltip name="ВыполнитьСозданиеЭПЭРасширеннаяПодсказка" id="1175"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="СписокВыбранныхДокументов" id="550">
+					<Representation>List</Representation>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокВыбранныхДокументов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокВыбранныхДокументовКонтекстноеМеню" id="551"/>
+					<AutoCommandBar name="СписокВыбранныхДокументовКоманднаяПанель" id="552">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокВыбранныхДокументовРасширеннаяПодсказка" id="553"/>
+					<SearchStringAddition name="СписокВыбранныхДокументовСтрокаПоиска" id="554">
+						<AdditionSource>
+							<Item>СписокВыбранныхДокументов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокВыбранныхДокументовСтрокаПоискаКонтекстноеМеню" id="555"/>
+						<ExtendedTooltip name="СписокВыбранныхДокументовСтрокаПоискаРасширеннаяПодсказка" id="556"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокВыбранныхДокументовСостояниеПросмотра" id="557">
+						<AdditionSource>
+							<Item>СписокВыбранныхДокументов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокВыбранныхДокументовСостояниеПросмотраКонтекстноеМеню" id="558"/>
+						<ExtendedTooltip name="СписокВыбранныхДокументовСостояниеПросмотраРасширеннаяПодсказка" id="559"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокВыбранныхДокументовУправлениеПоиском" id="560">
+						<AdditionSource>
+							<Item>СписокВыбранныхДокументов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокВыбранныхДокументовУправлениеПоискомКонтекстноеМеню" id="561"/>
+						<ExtendedTooltip name="СписокВыбранныхДокументовУправлениеПоискомРасширеннаяПодсказка" id="562"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">СписокВыбранныхДокументовПередНачаломДобавления</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="СписокВыбранныхДокументовДокумент" id="563">
+							<DataPath>СписокВыбранныхДокументов.Документ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбранные документы</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокВыбранныхДокументовДокументКонтекстноеМеню" id="564"/>
+							<ExtendedTooltip name="СписокВыбранныхДокументовДокументРасширеннаяПодсказка" id="565"/>
+						</InputField>
+						<CheckBoxField name="СписокВыбранныхДокументовЕстьЭТрН" id="739">
+							<DataPath>СписокВыбранныхДокументов.ЕстьЭТрН</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокВыбранныхДокументовЕстьЭТрНКонтекстноеМеню" id="740"/>
+							<ExtendedTooltip name="СписокВыбранныхДокументовЕстьЭТрНРасширеннаяПодсказка" id="741"/>
+						</CheckBoxField>
+						<CheckBoxField name="СписокВыбранныхДокументовЕстьЭЗЗ" id="735">
+							<DataPath>СписокВыбранныхДокументов.ЕстьЭЗЗ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокВыбранныхДокументовЕстьЭЗЗКонтекстноеМеню" id="736"/>
+							<ExtendedTooltip name="СписокВыбранныхДокументовЕстьЭЗЗРасширеннаяПодсказка" id="737"/>
+						</CheckBoxField>
+						<CheckBoxField name="СписокВыбранныхДокументовЕстьЭПЭ" id="1182">
+							<DataPath>СписокВыбранныхДокументов.ЕстьЭПЭ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокВыбранныхДокументовЕстьЭПЭКонтекстноеМеню" id="1183"/>
+							<ExtendedTooltip name="СписокВыбранныхДокументовЕстьЭПЭРасширеннаяПодсказка" id="1184"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонтурДиадокПеревозочныеДокументы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокДокументов.ИдентификаторЗЗ</Field>
+				<Field>СписокДокументов.ИдентификаторПЭ</Field>
+				<Field>СписокДокументов.ИдентификаторТрН</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫРАЗИТЬ("ИдентификаторНастройки" КАК СТРОКА(36)) КАК ИдентификаторНастройки,
+	ВЫРАЗИТЬ("РеализацияТоваровУслуг" КАК СТРОКА(250)) КАК ТипДокумента,
+	ВЫРАЗИТЬ("РеализацияТоваровУслуг" КАК СТРОКА(250)) КАК ТипДокументаПредставление,
+	ЛОЖЬ КАК ЕстьЭТрН,
+	НЕОПРЕДЕЛЕНО КАК ИдентификаторТрН,
+	ЛОЖЬ КАК ЕстьЭЗЗ,
+	НЕОПРЕДЕЛЕНО КАК ИдентификаторЗЗ,
+	ЛОЖЬ КАК ЕстьЭПЭ,
+	НЕОПРЕДЕЛЕНО КАК ИдентификаторПЭ,
+	ЛОЖЬ КАК Проведен,
+	НЕОПРЕДЕЛЕНО КАК Ссылка,
+	ВЫРАЗИТЬ("" КАК СТРОКА(15)) КАК Номер,
+	ДАТАВРЕМЯ(1, 1, 1) КАК Дата,
+	0 КАК СуммаДокумента,
+	НЕОПРЕДЕЛЕНО КАК Организация,
+	НЕОПРЕДЕЛЕНО КАК Контрагент,
+	НЕОПРЕДЕЛЕНО КАК Грузоотправитель,
+	НЕОПРЕДЕЛЕНО КАК Грузополучатель,
+	0 КАК НомерКартинки</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВыбранныхДокументов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список выбранных документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ЕстьЭЗЗ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭЗЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьЭТрН" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭТрН</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьЭПЭ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЭПЭ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтборТипДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор тип документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборОрганизация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборКонтрагент" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимПодбораИзЭТрН" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим подбора из э тр Н</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаСписка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка списка</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="РежимПодбораИзЗЗ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим подбора из ЗЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборРежимПодбора" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор режим подбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимПодбораИзЭПЭ" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим подбора из ЭПЭ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимСозданияДокументов" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим создания документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьСозданиеЭТрН" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспортная накладная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать транспортную накладную</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСозданиеЭТрН</Action>
+		</Command>
+		<Command name="ВыполнитьСозданиеЗаказаЗаявки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ-заявка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать заказ-заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСозданиеЗаказаЗаявки</Action>
+		</Command>
+		<Command name="НастройкиПодбора" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки подбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкиПодбора</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ВыбратьПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьПериод</Action>
+		</Command>
+		<Command name="ВыбратьДокумент" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить к выбранным</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьДокумент</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьДокумент" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьДокумент</Action>
+		</Command>
+		<Command name="ВыполнитьСозданиеЭПЭ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поручение экспедитору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать поручение экспедитору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьСозданиеЭПЭ</Action>
+		</Command>
+		<Command name="ПерейтиПоСсылкеДокументыОснования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы-основания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти по ссылке документы основания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиПоСсылкеДокументыОснования</Action>
+		</Command>
+		<Command name="УдалитьЭТрН" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ЭТрН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить э тр Н</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЭТрН</Action>
+		</Command>
+		<Command name="УдалитьЭЗЗ" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ЭЗЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ЭЗЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЭЗЗ</Action>
+		</Command>
+		<Command name="УдалитьЭПЭ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ЭПЭ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить ЭПЭ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЭПЭ</Action>
+		</Command>
+	</Commands>
+</Form>
