@@ -10,6 +10,7 @@
 		<Metadata name="CommonModule.ПодсистемыКонфигурацииПереопределяемый" id="c6ada2d6-cbed-4e81-aaa5-f678e9d0e649" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="EventSubscription.бит_РегистрацияДвиженийХозрасчетный" id="7c1e4a2b-6d58-4f13-9a70-2b8e5c91d4aa" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="AccountingRegister.Хозрасчетный" id="f87bf415-402f-400d-8c20-f21df45dcf7c" configVersion="0000000000000000000000000000000000000000"/>
+		<Metadata name="InformationRegister.бит_ДокументыПолученныеУзломУТ" id="4d5f1392-75ef-4a4b-a6e6-995ce4245296" configVersion="0000000000000000000000000000000000000000"/>
 		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="fe64a530-57cd-4eeb-b02e-b46218273c28" configVersion="0000000000000000000000000000000000000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.бит_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>бит</Vendor>
-			<Version>1.0.0.6</Version>
+			<Version>1.0.0.7</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -71,6 +71,7 @@
 			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<EventSubscription>бит_РегистрацияДвиженийХозрасчетный</EventSubscription>
+			<InformationRegister>бит_ДокументыПолученныеУзломУТ</InformationRegister>
 			<AccountingRegister>Хозрасчетный</AccountingRegister>
 		</ChildObjects>
 	</Configuration>
